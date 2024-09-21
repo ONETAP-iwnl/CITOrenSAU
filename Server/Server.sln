@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\AuthService.csproj", "{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketManager", "TicketManager\TicketManager.csproj", "{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6D285E8-015C-42FF-B1EB-70780CAE6FF2}
+	EndGlobalSection
+EndGlobal
