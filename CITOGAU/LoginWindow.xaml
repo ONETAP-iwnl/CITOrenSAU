@@ -1,0 +1,26 @@
+﻿<Window x:Class="CITOGAU.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="420" Width="400" WindowStartupLocation="CenterScreen" Background="#DAD7CD">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">
+            <Image Source="/Images/LOGO.png" Width="100" Height="100" Margin="0,0,0,20"/>
+            <TextBlock Text="Админ не грустный, он завис..." 
+                       FontSize="16" FontWeight="Bold" Foreground="#588157" TextAlignment="Center" Margin="0,0,0,20"/>
+            
+            <TextBlock Text="Login" FontSize="14" Foreground="Black" Margin="0,10,0,0"/>
+            <TextBox x:Name="LoginTextBox" 
+                     FontSize="14" Padding="10" Width="250" Height="40" 
+                     BorderBrush="#6C806F" Background="#FFF"/>
+
+            <TextBlock Text="Password" FontSize="14" Foreground="Black" Margin="0,10,0,0"/>
+            <PasswordBox x:Name="PasswordBox" 
+                         FontSize="14" Padding="10" Width="250" Height="40" 
+                         BorderBrush="#6C806F" Background="#FFF"/>
+
+            <Button Content="Войти" Width="250" Height="40" Background="#588157" FontSize="16" 
+                    Foreground="White" Margin="0,20,0,0" BorderThickness="0" Cursor="Hand" Click="LoginButton_Click"/>
+            <TextBlock x:Name="ErrorTextBlock" Text="" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20"/>
+        </StackPanel>
+    </Grid>
+</Window>

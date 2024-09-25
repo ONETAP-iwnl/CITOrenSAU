@@ -1,0 +1,30 @@
+﻿<Window x:Class="CITOGAU.RequestDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Подробности заявки" Height="530" Width="450" Background="#DAD7CD" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Подробности заявки" FontSize="18" FontWeight="Bold" Foreground="#588157" Margin="0,0,0,10"/>
+            <TextBlock Text="ID:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding ID_Ticket}" Foreground="Black"/>
+            <TextBlock Text="Номер аудитории:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding AudienceNumber}" Foreground="Black"/>
+            <TextBlock Text="Номер корпуса:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding BuildingNumber}" Foreground="Black"/>
+            <TextBlock Text="Дата создания:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding DateOfCreation}" Foreground="Black"/>
+            <TextBlock Text="Дата выполнения:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding DateOfCompletion}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="Статус:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Status}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="Автор:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding AuthorName}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="Исполнитель:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding ExecutorName}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="Тип проблемы:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Type}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="Описание:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Foreground="Black"/>
+        </StackPanel>
+    </Grid>
+</Window>

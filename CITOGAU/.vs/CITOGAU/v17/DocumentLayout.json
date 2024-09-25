@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Home-Pc\\Desktop\\CITOGAU1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\home-pc\\desktop\\citogau1\\createrequestwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:createrequestwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 303,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateRequestWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Home-Pc\\Desktop\\CITOGAU1\\CreateRequestWindow.xaml",
+              "RelativeDocumentMoniker": "CreateRequestWindow.xaml",
+              "ToolTip": "C:\\Users\\Home-Pc\\Desktop\\CITOGAU1\\CreateRequestWindow.xaml",
+              "RelativeToolTip": "CreateRequestWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-25T18:10:16.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
