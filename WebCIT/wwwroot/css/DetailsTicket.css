@@ -1,0 +1,164 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #e0dbce;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    position: static;
+    margin-left: -810px;
+}
+h3 {
+    font-size: 12px;
+    margin-left: 85px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.ticketDetails {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+    .ticketDetails th, .ticketDetails td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .ticketDetails th {
+        background-color: #d6d1c7;
+        font-weight: bold;
+    }
+
+    .ticketDetails tr:hover {
+        background-color: #bec2c6; /* Подсветка строки при наведении */
+    }
+
+a {
+    color: #3498db; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+    a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    .status.открыта {
+        background-color: green;
+        color: white;
+    }
+
+    .status.завершена {
+        background-color: red;
+        color: white;
+    }
+
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: #c5c9d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+    .sidebar-title:hover {
+        color: #000;
+        transform: scale(1.1);
+    }
+
+.menu-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    .menu-item ion-icon {
+        font-size: 30px;
+        color: #333;
+    }
+
+    .menu-item:hover ion-icon {
+        color: black;
+        cursor: pointer;
+    }
+
+    .menu-item img {
+        width: 24px; /* Установите нужный размер */
+        height: auto; /* Сохранение пропорций */
+        margin: 5px 0; /* Отступы */
+        transition: transform 0.2s; /* Плавный эффект при наведении */
+    }
+
+        .menu-item img:hover {
+            transform: scale(2.2); /* Увеличение иконки при наведении */
+        }
+
+.report-item img {
+    width: 48px;
+    height: auto;
+    margin: 5px 0;
+    transition: transform 0.2s;
+}
+
+    .report-item img:hover {
+        transform: scale(2.2);
+    }
+
+.btn-danger {
+    position: absolute;
+    right: 10px;
+    margin-right: 451px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
