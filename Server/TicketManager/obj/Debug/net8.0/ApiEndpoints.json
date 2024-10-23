@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "TicketManager.Controllers.TicketContoller",
+    "Method": "GetTicket",
+    "RelativePath": "TicketContoller/{numberticket}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID_Ticket",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "numberticket",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManager.Controllers.TicketContoller",
+    "Method": "GetStatusTicket",
+    "RelativePath": "TicketContoller/{statusTicket}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusTicket",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManager.Controllers.TicketContoller",
+    "Method": "GetAllTicket",
+    "RelativePath": "TicketContoller/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManager.Controllers.TicketContoller",
+    "Method": "CreateNewTicket",
+    "RelativePath": "TicketContoller/createTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newTicket",
+        "Type": "TicketManager.Model.Ticket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

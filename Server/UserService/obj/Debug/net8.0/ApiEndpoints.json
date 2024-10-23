@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "UserService.Controllers.UserController",
+    "Method": "GetAllUserAsync",
+    "RelativePath": "User/allUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

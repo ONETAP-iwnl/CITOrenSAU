@@ -11,9 +11,10 @@ namespace TicketManager.Model
         public DateTime? DateOfCreation { get; set; }  // Nullable DateTime
         public DateTime? DateOfCompletion { get; set; }  // Nullable DateTime
         public string Status { get; set; }
-        public int Author { get; set; }
-        public int Executor { get; set; }
+        public int? Author { get; set; }
+        public int? Executor { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
+        public string? NumberPhone { get; set; }
     }
 }

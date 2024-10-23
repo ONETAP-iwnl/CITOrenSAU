@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "goW2Ml1ByySejr9k3ayCxvu2RvGOxboqhzbgWM08IcXQzAeud/nqBKDMqmxplM/EHP8Kdc2n2uAUQzpN8Lf25w==",
+  "dgSpecHash": "6vr8zrUEa7Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\romka\\Source\\Repos\\CITOrenSAU\\Server\\TicketManager\\TicketManager.csproj",
+  "projectFilePath": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\TicketManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\romka\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\romka\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
