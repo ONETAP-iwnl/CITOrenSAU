@@ -1,4 +1,6 @@
 ﻿using AuthService.Context;
+using AuthService.DTO_Class;
+using AuthService.Interface;
 using AuthService.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,11 +11,11 @@ namespace AuthService.Controllers
     [Route("[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly AuthContext _context;
+        private readonly IAuthService _authService;
 
-        public AuthController(AuthContext context)
+        public AuthController(IAuthService authService)
         {
-            _context = context;
+            _authService = authService;
         }
 
         [HttpPost("login")]
@@ -24,23 +26,12 @@ namespace AuthService.Controllers
                 return BadRequest("Invalid client request");
             }
 
-            var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Login == model.Login && u.Password == model.Password);
+            var userResponse = await _authService.AuthenticateAsync(model);
 
-            if (user == null)
+            if (userResponse == null)
             {
                 return Unauthorized();
             }
-
-
-            var userResponse = new UserResponse //возвращаем полные данные
-            {
-                ID_User = user.ID_User,
-                Login = user.Login,
-                Email = user.Email,
-                Role = user.Role,
-                FIO = user.FIO
-            };
 
             return Ok(userResponse);
         }

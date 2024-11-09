@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "AuthService.Model.LoginRequest",
+        "Type": "AuthService.DTO_Class.LoginRequest",
         "IsRequired": true
       }
     ],

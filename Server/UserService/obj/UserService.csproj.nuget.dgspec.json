@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {}
+    "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {
+    "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\romka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\romka\\AppData\\Roaming\\NuGet\\NuGet.Config",

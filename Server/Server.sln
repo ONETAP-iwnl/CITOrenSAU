@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketManager", "TicketManager\TicketManager.csproj", "{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{41535A4B-856C-46B4-BB9D-B5715D42E011}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService", "UserService\UserService.csproj", "{41535A4B-856C-46B4-BB9D-B5715D42E011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
