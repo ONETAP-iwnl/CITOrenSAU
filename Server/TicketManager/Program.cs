@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TicketManager.Context;
+using TicketManager.Interface;
+using TicketManager.Model;
+using TicketManager.Service;
 
 namespace TicketManager
 {
@@ -12,7 +15,9 @@ namespace TicketManager
             builder.Services.AddDbContext<TicketContext>(options =>
            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // Add services to the container.
+            builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+            builder.Services.AddScoped<ITicketService, TicketService>();
+            builder.Services.AddSingleton<IServiceFactory, ServiceFactory>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();

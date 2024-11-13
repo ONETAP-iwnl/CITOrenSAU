@@ -1,70 +1,66 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TicketManager.Context;
+using TicketManager.Interface;
 using TicketManager.Model;
 
 namespace TicketManager.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TicketContoller: ControllerBase
+    public class TicketController: ControllerBase
     {
-        private readonly TicketContext _ticketContext;
+        private readonly ITicketService _ticketService;
 
-        public TicketContoller(TicketContext ticketContext)
+        public TicketController(IServiceFactory serviceFactory)
         {
-            _ticketContext = ticketContext;
+            _ticketService = serviceFactory.CreateTicketService();
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAllTicket() //получение всех тикетов
+        public async Task<IActionResult> GetAllTickets()
         {
-            var ticket = await _ticketContext.Tickets.ToListAsync();
-            return Ok(ticket);
+            var tickets = await _ticketService.GetAllTicketsAsync();
+            return Ok(tickets);
         }
 
-        [HttpGet("{numberticket}")]
-        public async Task<IActionResult> GetTicket(int ID_Ticket) //получение тикета по номеру
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetTicket(int id)
         {
-            var ticket = await _ticketContext.Tickets.FindAsync(ID_Ticket);
-            if(ticket == null)
-            {
-                return NotFound();
-
-            }
-            return Ok(ticket);
-        }
-
-        [HttpGet("{statusTicket}")]
-        public async Task<IActionResult> GetStatusTicket(string statusTicket) //получение статуса тикета
-        {
-            var ticket = await _ticketContext.Tickets.Where(t => t.Status == statusTicket).ToListAsync();
-            if(ticket == null || !ticket.Any())
+            var ticket = await _ticketService.GetTicketByIdAsync(id);
+            if (ticket == null)
             {
                 return NotFound();
             }
             return Ok(ticket);
         }
 
+        [HttpGet("status/{status}")]
+        public async Task<IActionResult> GetTicketsByStatus(string status)
+        {
+            var tickets = await _ticketService.GetTicketsByStatusAsync(status);
+            if (!tickets.Any())
+            {
+                return NotFound();
+            }
+            return Ok(tickets);
+        }
 
-        [HttpPost("createTicket")]
-        public async Task<IActionResult> CreateNewTicket([FromBody] Ticket newTicket)
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateTicket([FromBody] Ticket newTicket)
         {
             if (newTicket == null)
             {
                 return BadRequest("Invalid ticket data.");
-            } 
+            }
 
             try
             {
-                newTicket.DateOfCreation = DateTime.UtcNow;
-                _ticketContext.Tickets.Add(newTicket);
-                await _ticketContext.SaveChangesAsync();
-                return Ok(newTicket);
+                var createdTicket = await _ticketService.CreateTicketAsync(newTicket);
+                return Ok(createdTicket);
             }
             catch (Exception ex)
             {
-                // Логирование исключения
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }

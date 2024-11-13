@@ -1,45 +1,24 @@
 [
   {
-    "ContainingType": "TicketManager.Controllers.TicketContoller",
+    "ContainingType": "TicketManager.Controllers.TicketController",
     "Method": "GetTicket",
-    "RelativePath": "TicketContoller/{numberticket}",
+    "RelativePath": "Ticket/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ID_Ticket",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "numberticket",
-        "Type": "",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TicketManager.Controllers.TicketContoller",
-    "Method": "GetStatusTicket",
-    "RelativePath": "TicketContoller/{statusTicket}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "statusTicket",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TicketManager.Controllers.TicketContoller",
-    "Method": "GetAllTicket",
-    "RelativePath": "TicketContoller/all",
+    "ContainingType": "TicketManager.Controllers.TicketController",
+    "Method": "GetAllTickets",
+    "RelativePath": "Ticket/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -47,9 +26,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TicketManager.Controllers.TicketContoller",
-    "Method": "CreateNewTicket",
-    "RelativePath": "TicketContoller/createTicket",
+    "ContainingType": "TicketManager.Controllers.TicketController",
+    "Method": "CreateTicket",
+    "RelativePath": "Ticket/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -57,6 +36,22 @@
       {
         "Name": "newTicket",
         "Type": "TicketManager.Model.Ticket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManager.Controllers.TicketController",
+    "Method": "GetTicketsByStatus",
+    "RelativePath": "Ticket/status/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
