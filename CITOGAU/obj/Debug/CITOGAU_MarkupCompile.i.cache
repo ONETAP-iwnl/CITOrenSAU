@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Home-Pc\Desktop\CITOGAU1\obj\Debug\
+C:\Users\Home-Pc\source\repos\CITOrenSAU\CITOrenSAU\CITOGAU\obj\Debug\
 CITOGAU
 none
 false
 DEBUG;TRACE
-C:\Users\Home-Pc\Desktop\CITOGAU1\App.xaml
-9999378444
+C:\Users\Home-Pc\source\repos\CITOrenSAU\CITOrenSAU\CITOGAU\App.xaml
+9-1553249588
 
-211000027209
-30-2115904331
-AboutWindow.xaml;CreateRequestWindow.xaml;EmployeeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ReportsWindow.xaml;RequestDetailsWindow.xaml;RequestListControl.xaml;TechWindow.xaml;
+211621737272
+30-1140125040
+Windows\About\AboutWindow.xaml;Windows\Requests\CreateRequestWindow.xaml;Windows\WorkWindows\EmployeeWindow.xaml;Windows\Login\LoginWindow.xaml;Windows\WorkWindows\MainWindow.xaml;Windows\Reports\ReportsWindow.xaml;Windows\Requests\RequestDetailsWindow.xaml;Windows\Requests\RequestListControl.xaml;Windows\WorkWindows\TechWindow.xaml;
 
-True
+False
 

@@ -95,51 +95,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AboutWindow.xaml.cs">
+    <Compile Include="Windows\About\AboutWindow.xaml.cs">
       <DependentUpon>AboutWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ApiContext\AuthService.cs" />
-    <Compile Include="ApiContext\LoginRequest.cs" />
-    <Compile Include="ApiContext\SessionManager.cs" />
-    <Compile Include="ApiContext\Ticket.cs" />
-    <Compile Include="ApiContext\TicketService.cs" />
-    <Compile Include="ApiContext\UserResponse.cs" />
-    <Compile Include="ApiContext\UserService.cs" />
-    <Compile Include="CreateRequestWindow.xaml.cs">
+    <Compile Include="ApiContext\Services\AuthService.cs" />
+    <Compile Include="Classes\Users\LoginRequest.cs" />
+    <Compile Include="Classes\Users\SessionManager.cs" />
+    <Compile Include="Classes\Tickets\Ticket.cs" />
+    <Compile Include="ApiContext\Services\TicketService.cs" />
+    <Compile Include="Classes\Users\UserResponse.cs" />
+    <Compile Include="ApiContext\Services\UserService.cs" />
+    <Compile Include="Windows\Requests\CreateRequestWindow.xaml.cs">
       <DependentUpon>CreateRequestWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeWindow.xaml.cs">
+    <Compile Include="Windows\WorkWindows\EmployeeWindow.xaml.cs">
       <DependentUpon>EmployeeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ReportsWindow.xaml.cs">
+    <Compile Include="Windows\Reports\ReportsWindow.xaml.cs">
       <DependentUpon>ReportsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RequestDetailsWindow.xaml.cs">
+    <Compile Include="Windows\Requests\RequestDetailsWindow.xaml.cs">
       <DependentUpon>RequestDetailsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RequestListControl.xaml.cs">
+    <Compile Include="Windows\Requests\RequestListControl.xaml.cs">
       <DependentUpon>RequestListControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TechWindow.xaml.cs">
+    <Compile Include="Windows\WorkWindows\TechWindow.xaml.cs">
       <DependentUpon>TechWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="AboutWindow.xaml">
+    <Page Include="Windows\About\AboutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CreateRequestWindow.xaml">
+    <Page Include="Windows\Requests\CreateRequestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EmployeeWindow.xaml">
+    <Page Include="Windows\WorkWindows\EmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginWindow.xaml">
+    <Page Include="Windows\Login\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Windows\WorkWindows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -147,26 +147,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LoginWindow.xaml.cs">
+    <Compile Include="Windows\Login\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Windows\WorkWindows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ReportsWindow.xaml">
+    <Page Include="Windows\Reports\ReportsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RequestDetailsWindow.xaml">
+    <Page Include="Windows\Requests\RequestDetailsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RequestListControl.xaml">
+    <Page Include="Windows\Requests\RequestListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TechWindow.xaml">
+    <Page Include="Windows\WorkWindows\TechWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -204,5 +204,6 @@
   <ItemGroup>
     <Resource Include="Images\LOGO.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
