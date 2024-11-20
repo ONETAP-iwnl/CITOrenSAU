@@ -2,6 +2,7 @@ using UserService.Interface;
 using UserService.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace UserService.Service
 {
@@ -14,24 +15,26 @@ namespace UserService.Service
             _userRepository = userRepository;
         }
 
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<Users>> GetAllUsersAsync()
         {
             return await _userRepository.GetAllUsersAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<Users> GetUserByIdAsync(int id)
         {
             return await _userRepository.GetUserByIdAsync(id);
         }
 
-        public async Task AddUserAsync(User user)
+        public async Task AddUserAsync(Users user)
         {
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash); //хеш
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+
+            // Сохраняем пользователя в репозитории
             await _userRepository.AddUserAsync(user);
-            
+
         }
 
-        public async Task UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(Users user)
         {
             await _userRepository.UpdateUserAsync(user);
         }

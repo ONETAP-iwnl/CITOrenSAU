@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\userservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|solutionrelative:userservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\userservice\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|solutionrelative:userservice\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\service\\iservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\service\\iservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\interface\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\interface\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\controllers\\ticketcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\controllers\\ticketcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\ticketmanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C47913EA-AA9E-4884-BF3D-B8169DEE26F2}|TicketManager\\TicketManager.csproj|solutionrelative:ticketmanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\userservice\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|solutionrelative:userservice\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,97 +38,45 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UserService\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "UserService\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:22:01.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Model\\Ticket.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Model\\Ticket.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Model\\Ticket.cs",
-              "RelativeToolTip": "TicketManager\\Model\\Ticket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Service\\UserService.cs",
+              "RelativeToolTip": "UserService\\Service\\UserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:24:20.994Z",
+              "WhenOpened": "2024-11-20T12:46:48.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IServiceFactory.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Service\\IServiceFactory.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Service\\IServiceFactory.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Service\\IServiceFactory.cs",
-              "RelativeToolTip": "TicketManager\\Service\\IServiceFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Model\\User.cs",
+              "RelativeDocumentMoniker": "UserService\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Model\\User.cs",
+              "RelativeToolTip": "UserService\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:18:30.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TicketManager\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TicketManager\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-13T15:13:57.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketContoller.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Controllers\\TicketContoller.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Controllers\\TicketContoller.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Controllers\\TicketContoller.cs",
-              "RelativeToolTip": "TicketManager\\Controllers\\TicketContoller.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAApwDoAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:10:42.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketService.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Service\\TicketService.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Service\\TicketService.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Service\\TicketService.cs",
-              "RelativeToolTip": "TicketManager\\Service\\TicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:01:57.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITicketService.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Interface\\ITicketService.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Interface\\ITicketService.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Interface\\ITicketService.cs",
-              "RelativeToolTip": "TicketManager\\Interface\\ITicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:57:41.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Program.cs",
-              "RelativeDocumentMoniker": "TicketManager\\Program.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\TicketManager\\Program.cs",
-              "RelativeToolTip": "TicketManager\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:49:27.609Z",
+              "WhenOpened": "2024-11-20T12:31:39.35Z",
               "EditorCaption": ""
             }
           ]

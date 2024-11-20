@@ -2,7 +2,7 @@
 
 namespace UserService.Model
 {
-    public class User
+    public class Users
     {
         [Key]
         public int ID_User { get; set; }

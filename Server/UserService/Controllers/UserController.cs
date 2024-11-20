@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using UserService.Context;
 using UserService.Interface;
 using UserService.Model;
@@ -37,19 +38,30 @@ namespace UserService.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User newUser)
+        public async Task<IActionResult> Register([FromBody] Users newUser)
         {
-            if (newUser == null || string.IsNullOrWhiteSpace(newUser.PasswordHash))
+            Console.WriteLine($"Получен запрос на регистрацию: {JsonConvert.SerializeObject(newUser)}");
+            try
             {
-                return BadRequest("Invalid user data.");
-            }
+                if (!ModelState.IsValid)
+                {
+                    Console.WriteLine("Ошибка валидации модели.");
+                    return BadRequest(ModelState);
+                }
 
-            await _userService.AddUserAsync(newUser);
-            return Ok(newUser);
+                await _userService.AddUserAsync(newUser);
+                Console.WriteLine("Пользователь успешно зарегистрирован.");
+                return Ok(newUser);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
+                return StatusCode(500, "Ошибка сервера");
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] User user)
+        public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] Users user)
         {
             if (user == null || id != user.ID_User)
             {
