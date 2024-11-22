@@ -1,5 +1,6 @@
 ﻿using AuthService.Context;
 using AuthService.Interface;
+using BCrypt.Net;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthService.Model
@@ -13,15 +14,14 @@ namespace AuthService.Model
             _context = context;
         }
 
-        // Метод для получения пользователя по логину и паролю
-        public async Task<User> GetUserByLoginAndPasswordAsync(string login, string password)
+        public async Task<Users> GetUserByLoginAndPasswordAsync(string login, string password)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Login == login && u.Password == password);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Login == login);
+            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+            {
+                return user;
+            }
+            return null;
         }
-
-
-        //нужно сделать хэширование пароля, я пока хз как это сделать
-        //помогите
-
     }
 }

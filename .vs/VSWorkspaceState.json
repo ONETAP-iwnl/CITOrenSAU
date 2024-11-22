@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Server",
+    "\\Server\\TicketManager",
+    "\\Server\\TicketManager\\Model"
   ],
-  "SelectedNode": "\\Server.sln",
+  "SelectedNode": "\\Server\\TicketManager\\Model\\Ticket.cs",
   "PreviewInSolutionExplorer": false
 }

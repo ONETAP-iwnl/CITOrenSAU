@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\context\\authcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\context\\authcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\model\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\model\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\dto_class\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dto_class\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\dto_class\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dto_class\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\authservice\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EF4131-5F9F-4057-B1F6-AE774AD22FFB}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\server\\userservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41535A4B-856C-46B4-BB9D-B5715D42E011}|UserService\\UserService.csproj|solutionrelative:userservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +78,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthContext.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Context\\AuthContext.cs",
+              "RelativeDocumentMoniker": "AuthService\\Context\\AuthContext.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Context\\AuthContext.cs*",
+              "RelativeToolTip": "AuthService\\Context\\AuthContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:57:11.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AuthService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AuthService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T06:55:52.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\DTO_Class\\UserResponse.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTO_Class\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\DTO_Class\\UserResponse.cs",
+              "RelativeToolTip": "AuthService\\DTO_Class\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:48:45.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\DTO_Class\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTO_Class\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\DTO_Class\\LoginRequest.cs",
+              "RelativeToolTip": "AuthService\\DTO_Class\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:48:39.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "AuthService\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:47:49.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Model\\UserRepository.cs",
+              "RelativeDocumentMoniker": "AuthService\\Model\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Model\\UserRepository.cs",
+              "RelativeToolTip": "AuthService\\Model\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:47:36.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:47:26.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interface\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "AuthService\\Interface\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:46:22.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Service\\AuthService.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\AuthService\\Service\\AuthService.cs",
+              "RelativeToolTip": "AuthService\\Service\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:45:46.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "UserService\\Repository\\UserRepository.cs",
@@ -50,25 +203,24 @@
               "RelativeToolTip": "UserService\\Repository\\UserRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:22:01.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T13:22:01.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "UserService\\Service\\UserService.cs",
               "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Service\\UserService.cs",
               "RelativeToolTip": "UserService\\Service\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:46:48.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\Server\\UserService\\Model\\User.cs",
               "RelativeDocumentMoniker": "UserService\\Model\\User.cs",
@@ -76,8 +228,7 @@
               "RelativeToolTip": "UserService\\Model\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:31:39.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T12:31:39.35Z"
             }
           ]
         }

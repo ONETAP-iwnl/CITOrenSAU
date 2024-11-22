@@ -12,11 +12,9 @@ namespace AuthService.Service
             _userRepository = userRepository;
         }
 
-        // Метод для аутентификации пользователя
         public async Task<UserResponse> AuthenticateAsync(LoginRequest loginRequest)
         {
             var user = await _userRepository.GetUserByLoginAndPasswordAsync(loginRequest.Login, loginRequest.Password);
-
             if (user == null)
             {
                 return null;
@@ -28,7 +26,8 @@ namespace AuthService.Service
                 Login = user.Login,
                 Email = user.Email,
                 Role = user.Role,
-                FIO = user.FIO
+                FIO = user.FIO,
+                NumberPhone = user.NumberPhone
             };
         }
     }
