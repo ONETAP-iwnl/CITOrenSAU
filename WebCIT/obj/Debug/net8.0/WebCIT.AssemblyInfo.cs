@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebCIT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29d56224052802e54dafcef38fb13891759dfd67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5f2f89d9a2a0c2fc5144a6acb1ef0c9a69623d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebCIT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebCIT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

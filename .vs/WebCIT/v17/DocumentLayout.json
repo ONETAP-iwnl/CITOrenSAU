@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|d:\\users\\senatskiy.nd1669\\documents\\github\\onetap-iwnl\\citorensau\\webcit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|solutionrelative:webcit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|d:\\users\\senatskiy.nd1669\\documents\\github\\onetap-iwnl\\citorensau\\webcit\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|solutionrelative:webcit\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Program.cs",
+              "RelativeDocumentMoniker": "WebCIT\\Program.cs",
+              "ToolTip": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Program.cs",
+              "RelativeToolTip": "WebCIT\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:05:49.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TicketController.cs",
               "DocumentMoniker": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Controllers\\TicketController.cs",
               "RelativeDocumentMoniker": "WebCIT\\Controllers\\TicketController.cs",
               "ToolTip": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Controllers\\TicketController.cs",
               "RelativeToolTip": "WebCIT\\Controllers\\TicketController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAYwEIAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T08:05:07.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterUser.cshtml",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Views\\User\\RegisterUser.cshtml",
               "RelativeDocumentMoniker": "WebCIT\\Views\\User\\RegisterUser.cshtml",
@@ -60,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AdminDashboard.css",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\wwwroot\\css\\AdminDashboard.css",
               "RelativeDocumentMoniker": "WebCIT\\wwwroot\\css\\AdminDashboard.css",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RegisterUser.css",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\wwwroot\\css\\RegisterUser.css",
               "RelativeDocumentMoniker": "WebCIT\\wwwroot\\css\\RegisterUser.css",

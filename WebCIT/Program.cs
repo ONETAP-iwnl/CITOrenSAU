@@ -27,7 +27,7 @@ namespace WebCIT
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Admin}/{action=AdminDashboard}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
             app.Run("https://0.0.0.0:7111");
             app.Run();

@@ -34,7 +34,7 @@ namespace WebCIT.Controllers
                 {
                     switch (userResponse.Role)
                     {
-                        case "Админ":
+                        case "Администратор": //роль у нас не АДМИН, А Администратор, НИКИТА!!!!
                             return RedirectToAction("AdminDashboard", "Admin");
 
                         case "Тех. Специалист":
