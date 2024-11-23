@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|d:\\users\\senatskiy.nd1669\\documents\\github\\onetap-iwnl\\citorensau\\webcit\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|solutionrelative:webcit\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|d:\\users\\senatskiy.nd1669\\documents\\github\\onetap-iwnl\\citorensau\\webcit\\views\\user\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C0E4EE94-3EBC-40CB-ABE8-F6D4969BE5EA}|WebCIT\\WebCIT.csproj|solutionrelative:webcit\\views\\user\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -26,24 +30,37 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "WebCIT\\Controllers\\TicketController.cs",
+              "ToolTip": "d:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Controllers\\TicketController.cs",
+              "RelativeToolTip": "WebCIT\\Controllers\\TicketController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwEIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:05:07.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RegisterUser.cshtml",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Views\\User\\RegisterUser.cshtml",
               "RelativeDocumentMoniker": "WebCIT\\Views\\User\\RegisterUser.cshtml",
               "ToolTip": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\Views\\User\\RegisterUser.cshtml",
               "RelativeToolTip": "WebCIT\\Views\\User\\RegisterUser.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEQAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-23T07:56:59.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminDashboard.css",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\wwwroot\\css\\AdminDashboard.css",
               "RelativeDocumentMoniker": "WebCIT\\wwwroot\\css\\AdminDashboard.css",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "WebCIT\\wwwroot\\css\\AdminDashboard.css",
               "ViewState": "AQIAAM8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-23T07:56:51.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T07:56:51.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RegisterUser.css",
               "DocumentMoniker": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\wwwroot\\css\\RegisterUser.css",
               "RelativeDocumentMoniker": "WebCIT\\wwwroot\\css\\RegisterUser.css",
@@ -64,8 +80,7 @@
               "RelativeToolTip": "WebCIT\\wwwroot\\css\\RegisterUser.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-23T07:56:44.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T07:56:44.154Z"
             }
           ]
         }

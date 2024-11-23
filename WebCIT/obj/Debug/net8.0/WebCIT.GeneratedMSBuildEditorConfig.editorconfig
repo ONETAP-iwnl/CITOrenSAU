@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebCIT
 build_property.RootNamespace = WebCIT
-build_property.ProjectDir = D:\Users\senatskiy.nd1669\Documents\GIThub\ONETAP-iwnl\CITOrenSAU\WebCIT\
+build_property.ProjectDir = d:\Users\senatskiy.nd1669\Documents\GIThub\ONETAP-iwnl\CITOrenSAU\WebCIT\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Users\senatskiy.nd1669\Documents\GIThub\ONETAP-iwnl\CITOrenSAU\WebCIT
+build_property.MSBuildProjectDirectory = d:\Users\senatskiy.nd1669\Documents\GIThub\ONETAP-iwnl\CITOrenSAU\WebCIT
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Account/Login.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Admin/AdminDashboard.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Admin/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Home/Index.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Home/Privacy.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Login/Login.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/Error.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Ticket/Details.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Ticket/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/User/RegisterUser.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/User/RegisterUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/_ViewImports.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/_ViewStart.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/_Layout.cshtml]
+[d:/Users/senatskiy.nd1669/Documents/GIThub/ONETAP-iwnl/CITOrenSAU/WebCIT/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wt5zw5624q

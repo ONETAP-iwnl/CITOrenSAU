@@ -34,26 +34,7 @@ namespace WebCIT.Controllers
         {
             var ticket = await _ticketService.GetAllTicket();
 
-<<<<<<< HEAD
 
-            if (!string.IsNullOrEmpty(searchQuery))
-            {
-                searchQuery = searchQuery.ToLower();
-                ticket = ticket.Where(t =>
-                    t.AudienceNumber.ToLower().Contains(searchQuery) ||
-                    t.BuildingNumber.ToLower().Contains(searchQuery)
-                ).ToList();
-            }
-
-
-            if (!string.IsNullOrEmpty(searchType))
-            {
-                searchType = searchType.ToLower();
-                ticket = ticket.Where(t =>
-                t.Type.Equals(searchType, StringComparison.OrdinalIgnoreCase))
-                    .ToList();
-            }
-=======
             //---------------
             //Нужно исправить, т.к. в бд нет атрибутов AudienceNumber и BuildingNumber
             //
@@ -79,7 +60,6 @@ namespace WebCIT.Controllers
             //    t.Type.Equals(searchType, StringComparison.OrdinalIgnoreCase))
             //        .ToList();
             //}
->>>>>>> b9e76ddf6d1a8a8c82eb0f46ddb1964e23a8417e
 
 
             if (!string.IsNullOrEmpty(searchStatus))
