@@ -11,7 +11,6 @@
 * [Entity Framework Core](https://docs.microsoft.com/ru-ru/ef/core/)
 * Unit Tests
 * [Docker](https://www.docker.com/)
-* 
 
   ### Функциональность проекта
 Возможности клиента:
