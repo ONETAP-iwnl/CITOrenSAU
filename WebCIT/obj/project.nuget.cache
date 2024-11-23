@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "j+VQYTjfoYByJt6vbYUJuVDfkUXHChTdB8wjhBdFqoWE/L+JmWzEIcGsPyl5Eg2ev4XVZGhDd54NKl9JIq+yvA==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\WebCIT.csproj",
+  "expectedPackageFiles": [
+    "d:\\Users\\senatskiy.nd1669\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша D:\\Users\\senatskiy.nd1669\\Documents\\GIThub\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+﻿@model List<WebCIT.Classed.Ticket.Ticket>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="~/css/AdminDashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Панель администратора</h1>
+        <h2>Список тикетов</h2>
+
+      <div class="form-container">
+
+        <!-- Форма поиска -->
+        <form method="get" asp-controller="Ticket" asp-action="AdminDashboard">
+            <input type="text" name="searchQuery" placeholder="Поиск по аудитории, корпусу" class="form-control" />
+            <button type="submit" class="btn btn-primary">Найти</button>
+        </form>
+
+        <!-- Форма поиска по типу -->
+        <form method="get" asp-controller="Ticket" asp-action="AdminDashboard">
+            <select name="searchType" id="searchType" class="form-control">
+                <option value="">Поиск по типу</option>
+                <option value="Техническая">Техническая</option>
+                <option value="Административная">Административная</option>
+                <option value="Прочие">Прочие</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Найти</button>
+        </form>
+
+        <!-- Форма поиска по статусу -->
+        <form method="get" asp-controller="Ticket" asp-action="AdminDashboard">
+            <select name="searchStatus" id="searchStatus" class="form-control">
+                <option value="">Поиск по статусу</option>
+                <option value="Открыта">Открыта</option>
+                <option value="Завершена">Завершена</option>
+                <option value="Новая">Новая</option>
+                <option value="Отклонена">Отклонена</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Найти</button>
+        </form>
+      </div>
+        
+        <table class="ticket-table">
+            <table class="ticket-table">
+                <thead>
+                    <tr>
+                        <th>Номер тикета</th>
+                        <th>Номер корпуса</th> @*нужно исправить*@
+                        <th>Номер аудитории</th> @*нужно исправить*@
+                        <th>Автор</th>
+                        <th>Тип</th>
+                        @* <th>Описание</th> *@
+                        <th>Дата создания</th>
+                        @* <th>Исполнитель</th> *@
+                        <th>Статус</th>
+                        <th>Детали</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var ticket in Model)
+                        {
+                            <tr>
+                                <td>@ticket.ID_Ticket</td>
+                                <td>@ticket.ID_Department</td> @*исправлено*@
+                                <td>@ticket.Author</td>
+                                <td>@ticket.Type</td>
+                                @* <td>@ticket.Description</td> *@
+                                <td>@ticket.DateOfCreation</td>
+                                @* <td>@ticket.Executor</td> *@
+                                <td>@ticket.Status</td>
+                                <td><a href="@Url.Action("Details", "Ticket", new { ID_Ticket = ticket.ID_Ticket })" class="btn btn-secondary">Подробнее</a></td>
+                            </tr>
+                        }
+                    }
+                else
+                {
+                    <tr>
+                        <td colspan="5">Нет доступных тикетов</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <nav>
+        <div class="sidebar">
+
+            <h1 class="sidebar-title">WebCIT</h1>
+
+            <div class="menu-item">
+                <img src="~/images/main/profile.svg" alt="Профиль">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/settings.svg" alt="Настройки">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/notifications.svg" alt="Уведомления">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/list.svg" alt="Отчеты">
+            </div>
+
+            <form method="get" asp-controller="User" asp-action="RegisterUser">
+                <button type="submit" class="menu-item">
+                    <img src="~/images/main/useradd.svg" alt="Зарегистрировать пользователя" />
+                </button>
+            </form>
+        </div>
+    </nav>
+        <footer>
+            <h3>
+                Мы находимся в корпусе инженерного факультета, 518к <br>
+                Режим работы: ежедневно, кроме субботы и воскресенья <br>
+                с 9:00 до 17:00 Тел.: 30-65-50 <br>
+                Copyright (c) 2007 - 2024 <br>
+                Центр Информационных Технологий <br>
+                ФГБОУ ВО Оренбургский ГАУ <br>
+            </h3>
+        </footer>
+
+</body>

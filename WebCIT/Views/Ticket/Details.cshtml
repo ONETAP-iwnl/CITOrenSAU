@@ -1,0 +1,98 @@
+﻿@model WebCIT.Classed.Ticket.Ticket
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали тикета</title>
+    <link rel="stylesheet" href="~/css/detailsticket.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Панель администратора</h1>
+        <h2>Подробности тикета</h2>
+
+        @if (Model != null)
+        {
+            <table class="ticketDetails">
+                <thead>
+                    <tr>
+                        <th>Номер тикета</th>
+                        <th>Номер корпуса</th>  @*нужно исправить*@
+                        <th>Номер аудитории</th> @*нужно исправить*@
+                        <th>Автор</th>
+                        <th>Тип</th>
+                        <th>Дата создания</th>
+                        <th>Статус</th>
+                        <th>Дата завершения</th>
+                        <th>Исполнитель</th>
+                        <th>Описание</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.ID_Ticket</td>
+                        <td>@Model.ID_Department</td> @*Исправленная часть*@
+                        <td>@Model.Author</td>
+                        <td>@Model.Type</td>
+                        <td>@Model.DateOfCreation?.ToString("dd.MM.yyyy")</td>
+                        <td>@Model.Status</td>
+                        <td>@Model.DateOfCompletion?.ToString("dd.MM.yyyy")</td>
+                        <td>@Model.Executor</td>
+                        <td>@Model.Description</td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>Тикет не найден.</p>
+        }
+
+        <a href="@Url.Action("AdminDashboard", "Admin")" class="btn btn-secondary">Назад к списку тикетов</a>
+    </div>
+    
+    @if (Model.Status != "Отклонена")
+    {
+        <form method="post" asp-action="RejectTicket" asp-controller="Ticket">
+            <input type="hidden" name="id" value="@Model.ID_Ticket" />
+            <button type="submit" class="btn btn-danger">Отклонить</button>
+        </form>
+    }
+
+    <nav>
+    <div class="sidebar">
+        <h1 class="sidebar-title">WebCIT</h1>
+
+        <div class="menu-item">
+            <img src="~/images/main/profile.svg" alt="Профиль">
+        </div>
+        <div class="menu-item">
+            <img src="~/images/main/settings.svg" alt="Настройки">
+        </div>
+        <div class="menu-item">
+            <img src="~/images/main/notifications.svg" alt="Уведомления">
+        </div>
+        <div class="report-item">
+            <img src="~/images/main/report.svg" alt="Отчеты">
+        </div>
+    </nav>
+    </div>
+    <footer>
+        <h3>
+            Мы находимся в корпусе инженерного факультета, 518к <br>
+            Режим работы: ежедневно, кроме субботы и воскресенья <br>
+            с 9:00 до 17:00 Тел.: 30-65-50 <br>
+            Copyright (c) 2007 - 2024 <br>
+            Центр Информационных Технологий <br>
+            ФГБОУ ВО Оренбургский ГАУ <br>
+        </h3>
+    </footer>
+</body>
+</html>

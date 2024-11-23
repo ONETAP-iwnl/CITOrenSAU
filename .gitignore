@@ -1,0 +1,10 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+<<<<<<< HEAD
+=======
+/Server/.vs/Server/FileContentIndex
+>>>>>>> b9e76ddf6d1a8a8c82eb0f46ddb1964e23a8417e
+/.vs/WebCIT/FileContentIndex
+/.vs/CITOrenSAU/FileContentIndex

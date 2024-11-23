@@ -1,0 +1,222 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #e0dbce;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ tbody tr:hover {
+ background-color: #bec2c6; /* Подсветка строки при наведении */
+ }
+
+ a {
+ color: #3498db; /* Цвет ссылки */
+ text-decoration: none; /* Убираем подчеркивание */
+ }
+
+ a:hover {
+ text-decoration: underline; /* Подчеркивание при наведении */
+ }
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    position: static;
+    margin-left: -850px;
+}
+h3 {
+    font-size: 12px;
+    margin-left: 85px;
+    bottom: 0px;
+}
+
+
+
+.ticket-table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+    .ticket-table th, .ticket-table td {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .ticket-table th {
+        background-color: #d6d1c7;
+    }
+
+    .ticket-table td.status span {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+.status .открыта {
+    background-color: green;
+    color: green;
+}
+
+.status .завершена {
+    background-color: red;
+    color: red;
+}   
+
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: #c5c9d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+    .sidebar-title {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 30px;
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+.sidebar-title:hover {
+    color: #000;
+    transform:scale(1.1);
+}
+
+.menu-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: none; /* Убирает фон кнопки */                  /* для конопки добавить пользователя*/
+    border: none; /* Убирает границу кнопки */                  /* для конопки добавить пользователя*/
+    padding: 0; /* Убирает внутренние отступы */                /* для конопки добавить пользователя*/
+    cursor: pointer; /* Делает кнопку кликабельной */           /* для конопки добавить пользователя*/
+}
+
+    .menu-item ion-icon {
+        font-size: 30px;
+        color: #333;
+    }
+
+    .menu-item:hover ion-icon {
+        color: black;
+        cursor: pointer;
+    }
+
+.menu-item img {
+        width: 24px; /* Установите нужный размер */
+        height: auto; /* Сохранение пропорций */
+        margin: 5px 0; /* Отступы */
+        transition: transform 0.2s; /* Плавный эффект при наведении */
+
+}
+
+    .menu-item img:hover {
+          transform: scale(2.2); /* Увеличение иконки при наведении */
+    }
+
+
+/* Контейнер для всех форм */
+.form-container {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Равномерно распределяем формы */
+    position: Static;
+    margin-bottom: 100px;
+    margin-left: 375px;
+    align-items: center; /* Выравниваем по вертикали */
+    gap: 5px; /* Отступ между формами */
+    margin-bottom: 20px; /* Отступ снизу для всей группы форм */
+    width: 20%;
+}
+
+    /* Стили для каждой формы */
+    .form-container form {
+        display: flex;
+        flex-direction: row; /* Элементы формы идут в строку */
+        align-items: center; /* Выравниваем элементы по вертикали */
+        gap: 0px; /* Отступ между элементами внутри формы */
+    }
+
+    .form-container .form-control {
+        width: 200px; /* Ширина полей ввода и select */
+    }
+
+    .form-container .btn {
+        margin-left: 0px; /* Отступ между полем и кнопкой */
+    }
+
+    .form-container input[type="text"] {
+    height: auto;   /* Высота строки поиска остается по умолчанию */
+}
+
+/* Стили для выпадающих списков (select) */
+.form-container select {
+    height: 21px; /* Устанавливаем желаемую высоту для выпадающих списков */
+}
+
+/* Стиль для формы поиска */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+select.form-control {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    transition: border-color 0.3s;
+    color: #535869;
+}
+
+    select.form-control:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+button.btn {
+    padding: 3.5px 9px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #83889e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button.btn:hover {
+        background-color: #6b7087;
+    }

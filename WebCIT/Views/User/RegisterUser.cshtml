@@ -1,0 +1,91 @@
+﻿@model UserRegistrationModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация пользователя</title>
+    <link rel="stylesheet" href="~/css/RegisterUser.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация нового пользователя</h1>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+         <form asp-action="RegisterUser" asp-controller="User" method="post">
+            <div class="form-group">
+                <label for="Login">Логин</label>
+                <input type="login" id="Login" name="Login" class="form-control" value="@Model?.Login" />
+                <span asp-validation-for="Login" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Пароль</label>
+                <input type="password" id="Password" name="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" class="form-control" value="@Model?.Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Role">Роль</label>
+                <select id="Role" name="Role" class="form-control">
+                    <option value="">Выберите роль</option>
+                    <option value="Администратор">Администратор</option>
+                    <option value="Тех. Специалист">Тех. Специалист</option>
+                    <option value="Сотрудник">Сотрудник</option>
+                </select>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="FullName">ФИО</label>
+                <input type="text" id="FIO" name="FIO" class="form-control" value="@Model?.FIO" />
+                <span asp-validation-for="FIO" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber">Номер телефона</label>
+                <input type="tel" id="NumberPhone" name="NumberPhone" class="form-control" value="@Model?.NumberPhone" />
+                <span asp-validation-for="NumberPhone" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Зарегистрировать</button>
+            <a href="@Url.Action("AdminDashboard", "Ticket")" class="btn btn-secondary">Назад</a>
+        </form>
+    </div>  
+    <nav>
+        <div class="sidebar">
+
+            <h1 class="sidebar-title">WebCIT</h1>
+
+            <div class="menu-item">
+                <img src="~/images/main/profile.svg" alt="Профиль">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/settings.svg" alt="Настройки">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/notifications.svg" alt="Уведомления">
+            </div>
+            <div class="menu-item">
+                <img src="~/images/main/list.svg" alt="Отчеты">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
