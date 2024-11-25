@@ -1,6 +1,7 @@
-﻿using System.Windows;
+﻿using CITOGAU.Windows.Requests;
+using System.Windows;
 
-namespace CITOGAU
+namespace CITOGAU.Windows.WorkWindows
 {
     public partial class EmployeeWindow : Window
     {

@@ -1,10 +1,11 @@
 ﻿using CITOGAU.ApiContext;
+using CITOGAU.Windows.WorkWindows;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 
 
-namespace CITOGAU
+namespace CITOGAU.Windows.Login
 {
     public partial class LoginWindow : Window
     {
@@ -12,7 +13,7 @@ namespace CITOGAU
         public LoginWindow()
         {
             InitializeComponent();
-            _authService = new AuthService("https://26.191.182.183:7086");
+            _authService = new AuthService("https://26.240.38.124:7086");
         }
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -24,11 +25,10 @@ namespace CITOGAU
 
             if (userResponse != null)
             {
-                // Сохраняем текущего пользователя в SessionManager
-                SessionManager.CurrentUser = userResponse;
+                SessionManager.CurrentUser = userResponse; //получаем текущего пользователя
                 Console.WriteLine(userResponse.FIO);
 
-                if (userResponse.Role == "Админ")
+                if (userResponse.Role == "Администратор")
                 {
                     MainWindow mainWindow = new MainWindow();
                     mainWindow.Show();

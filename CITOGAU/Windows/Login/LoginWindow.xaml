@@ -1,6 +1,7 @@
-﻿<Window x:Class="CITOGAU.LoginWindow"
+﻿<Window x:Class="CITOGAU.Windows.Login.LoginWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="CITOGAU"
         Title="Авторизация" Height="420" Width="400" WindowStartupLocation="CenterScreen" Background="#DAD7CD">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">

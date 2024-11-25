@@ -13,6 +13,7 @@ namespace CITOGAU.ApiContext
         public string Email { get; set; }
         public string Role { get; set; }
         public string FIO { get; set; }
+        public string NumberPhone { get; set; }
 
     }
 }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="CITOGAU.EmployeeWindow"
+﻿<Window x:Class="CITOGAU.Windows.WorkWindows.EmployeeWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ЦИТОГАУ - Сотрудник ОГАУ" Height="600" Width="800" Background="#DAD7CD" WindowStartupLocation="CenterScreen">

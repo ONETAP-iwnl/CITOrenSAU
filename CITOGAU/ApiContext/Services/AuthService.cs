@@ -23,7 +23,7 @@ namespace CITOGAU.ApiContext
             _httpClient = new HttpClient(handler)
             {
                 BaseAddress = new Uri(baseAddress),
-                Timeout = TimeSpan.FromSeconds(30)
+                Timeout = TimeSpan.FromSeconds(10)
             };
         }
 

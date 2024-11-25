@@ -1,4 +1,4 @@
-﻿<Window x:Class="CITOGAU.CreateRequestWindow"
+﻿<Window x:Class="CITOGAU.Windows.Requests.CreateRequestWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Создать заявку" Height="440" Width="500" 

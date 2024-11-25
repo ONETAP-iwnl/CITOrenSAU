@@ -2,7 +2,7 @@
 using System;
 using System.Windows;
 
-namespace CITOGAU
+namespace CITOGAU.Windows.Requests
 {
     public partial class CreateRequestWindow : Window
     {
