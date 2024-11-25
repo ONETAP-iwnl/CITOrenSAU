@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Home-Pc\\source\\repos\\CITOrenSAU\\CITOrenSAU\\CITOGAU\\",
+  "WorkspaceRootPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -8,7 +8,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 303,
+          "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -25,23 +25,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{bdada759-5db7-402f-96e3-402b17c8c5b4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{bdada759-5db7-402f-96e3-402b17c8c5b4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{bdada759-5db7-402f-96e3-402b17c8c5b4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5da8d69b-058a-4294-a87a-f4f7ae2983b3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
