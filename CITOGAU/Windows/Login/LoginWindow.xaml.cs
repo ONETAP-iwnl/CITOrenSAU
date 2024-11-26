@@ -1,4 +1,5 @@
 ﻿using CITOGAU.ApiContext;
+using CITOGAU.Classes.Users;
 using CITOGAU.Windows.WorkWindows;
 using System;
 using System.Windows;

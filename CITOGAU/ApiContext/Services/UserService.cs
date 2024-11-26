@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CITOGAU.Classes.Users;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4eyWnMd0EQ4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\WebCIT\\WebCIT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\romka\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

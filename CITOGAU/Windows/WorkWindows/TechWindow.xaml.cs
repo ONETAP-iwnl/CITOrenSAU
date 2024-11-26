@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CITOGAU.ApiContext;
+using CITOGAU.ApiContext.Service;
+using CITOGAU.Classes.Tickets;
+using CITOGAU.Classes.Users;
 
 namespace CITOGAU
 {
@@ -31,89 +34,89 @@ namespace CITOGAU
 
         private async void LoadRequests()
         {
-            _tickets = await _ticketService.GetAllTicket();
-            var users = await _userService.GetAllUserAsync();
+            //_tickets = await _ticketService.GetAllTicket();
+            //var users = await _userService.GetAllUserAsync();
 
-            if (_tickets != null && users != null)
-            {
-                foreach (var ticket in _tickets)
-                {
-                    var author = users.FirstOrDefault(u => u.ID_User == ticket.Author);
-                    if (author != null)
-                    {
-                        ticket.AuthorName = author.FIO;
-                    }
+            //if (_tickets != null && users != null)
+            //{
+            //    foreach (var ticket in _tickets)
+            //    {
+            //        var author = users.FirstOrDefault(u => u.ID_User == ticket.Author);
+            //        if (author != null)
+            //        {
+            //            ticket.AuthorName = author.FIO;
+            //        }
 
-                    if (ticket.Executor.HasValue)
-                    {
-                        var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
-                        if (executor != null)
-                        {
-                            ticket.ExecutorName = executor.FIO;
-                        }
-                    }
-                }
+            //        if (ticket.Executor.HasValue)
+            //        {
+            //            var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
+            //            if (executor != null)
+            //            {
+            //                ticket.ExecutorName = executor.FIO;
+            //            }
+            //        }
+            //    }
 
-                RequestsDataGrid.ItemsSource = _tickets;
-            }
-            else
-            {
-                MessageBox.Show("Не удалось загрузить заявки или пользователей.");
-            }
+            //    RequestsDataGrid.ItemsSource = _tickets;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Не удалось загрузить заявки или пользователей.");
+            //}
         }
 
 
         private async void TakeInWorkButton_Click(object sender, RoutedEventArgs e)
         {
-            if (RequestsDataGrid.SelectedItem is Ticket selectedTicket)
-            {
-                if (selectedTicket.Status == "Новая")
-                {
-                    selectedTicket.Status = "В работе";
-                    selectedTicket.Executor = SessionManager.CurrentUser.ID_User;
+            //if (RequestsDataGrid.SelectedItem is Ticket selectedTicket)
+            //{
+            //    if (selectedTicket.Status == "Новая")
+            //    {
+            //        selectedTicket.Status = "В работе";
+            //        selectedTicket.Executor = SessionManager.CurrentUser.ID_User;
 
-                    try
-                    {
-                        await _ticketService.UpdateTicket(selectedTicket);
-                        RequestsDataGrid.Items.Refresh();
-                        MessageBox.Show("Заявка взята в работу.");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Ошибка при обновлении заявки: {ex.Message}");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Заявка уже взята в работу или завершена.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Пожалуйста, выберите заявку.");
-            }
+            //        try
+            //        {
+            //            await _ticketService.UpdateTicket(selectedTicket);
+            //            RequestsDataGrid.Items.Refresh();
+            //            MessageBox.Show("Заявка взята в работу.");
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show($"Ошибка при обновлении заявки: {ex.Message}");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Заявка уже взята в работу или завершена.");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Пожалуйста, выберите заявку.");
+            //}
         }
         private async void CompleteTicketButton_Click(object sender, RoutedEventArgs e)
         {
-            if (RequestsDataGrid.SelectedItem is Ticket selectedTicket)
-            {
-                if (selectedTicket.Status == "В работе")
-                {
-                    selectedTicket.Status = "Завершена";
-                    selectedTicket.DateOfCompletion = DateTime.Now;
-                    await _ticketService.UpdateTicket(selectedTicket);
-                    RequestsDataGrid.Items.Refresh();
-                    MessageBox.Show("Заявка завершена.");
-                }
-                else
-                {
-                    MessageBox.Show("Заявка не может быть завершена, пока она не находится в работе.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Пожалуйста, выберите заявку.");
-            }
+            //if (RequestsDataGrid.SelectedItem is Ticket selectedTicket)
+            //{
+            //    if (selectedTicket.Status == "В работе")
+            //    {
+            //        selectedTicket.Status = "Завершена";
+            //        selectedTicket.DateOfCompletion = DateTime.Now;
+            //        await _ticketService.UpdateTicket(selectedTicket);
+            //        RequestsDataGrid.Items.Refresh();
+            //        MessageBox.Show("Заявка завершена.");
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Заявка не может быть завершена, пока она не находится в работе.");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Пожалуйста, выберите заявку.");
+            //}
         }
     }
 }

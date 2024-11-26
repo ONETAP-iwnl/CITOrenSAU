@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CITOGAU.ApiContext
+namespace CITOGAU.Classes.Users
 {
     public static class SessionManager
     {

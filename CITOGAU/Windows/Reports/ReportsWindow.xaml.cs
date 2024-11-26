@@ -17,6 +17,8 @@ using OfficeOpenXml.Style;
 using System.IO;
 using System.Drawing;
 using CITOGAU.ApiContext;
+using CITOGAU.ApiContext.Service;
+using CITOGAU.Classes.Tickets;
 
 namespace CITOGAU
 {
@@ -39,59 +41,59 @@ namespace CITOGAU
 
         public async Task LoadReports()
         {
-            var tickets = await _ticketService.GetAllTicket();
-            var users = await _userService.GetAllUserAsync();
+            ////var tickets = await _ticketService.GetAllTicket();
+            //var users = await _userService.GetAllUserAsync();
 
-            if (tickets != null && users != null)
-            {
-                foreach (var ticket in tickets)
-                {
-                    if (ticket.Executor.HasValue)
-                    {
-                        var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
-                        if (executor != null)
-                        {
-                            ticket.ExecutorName = executor.FIO;
-                        }
-                    }
-                }
+            //if (tickets != null && users != null)
+            //{
+            //    foreach (var ticket in tickets)
+            //    {
+            //        if (ticket.Executor.HasValue)
+            //        {
+            //            var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
+            //            if (executor != null)
+            //            {
+            //                ticket.ExecutorName = executor.FIO;
+            //            }
+            //        }
+            //    }
 
-                ReportsDataGrid.ItemsSource = tickets;
-            }
-            else
-            {
-                MessageBox.Show("Failed to load tickets or users.");
-            }
+            //    ReportsDataGrid.ItemsSource = tickets;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Failed to load tickets or users.");
+            //}
         }
 
         private async void ApplyFilter_Click(object sender, RoutedEventArgs e)
         {
-            var startDate = StartDatePicker.SelectedDate;
-            var endDate = EndDatePicker.SelectedDate;
+            //var startDate = StartDatePicker.SelectedDate;
+            //var endDate = EndDatePicker.SelectedDate;
 
-            var users = await _userService.GetAllUserAsync();
-            var tickets = await _ticketService.GetAllTicket();
+            //var users = await _userService.GetAllUserAsync();
+            //var tickets = await _ticketService.GetAllTicket();
 
-            if (tickets != null)
-            {
-                var filteredTickets = tickets.Where(ticket =>
-                    (!startDate.HasValue || ticket.DateOfCreation >= startDate) &&
-                    (!endDate.HasValue || ticket.DateOfCreation <= endDate)
-                ).ToList();
+            //if (tickets != null)
+            //{
+            //    var filteredTickets = tickets.Where(ticket =>
+            //        (!startDate.HasValue || ticket.DateOfCreation >= startDate) &&
+            //        (!endDate.HasValue || ticket.DateOfCreation <= endDate)
+            //    ).ToList();
 
-                foreach (var ticket in filteredTickets)
-                {
-                    if(ticket.Executor.HasValue)
-                    {
-                        var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
-                        if(executor!= null)
-                        {
-                            ticket.ExecutorName = executor.FIO;
-                        }    
-                    }
-                }
-                ReportsDataGrid.ItemsSource = filteredTickets;
-            }
+            //    foreach (var ticket in filteredTickets)
+            //    {
+            //        if(ticket.Executor.HasValue)
+            //        {
+            //            var executor = users.FirstOrDefault(u => u.ID_User == ticket.Executor.Value);
+            //            if(executor!= null)
+            //            {
+            //                ticket.ExecutorName = executor.FIO;
+            //            }    
+            //        }
+            //    }
+            //    ReportsDataGrid.ItemsSource = filteredTickets;
+            //}
         }
 
         private async void SearchByID_Click(object sender, RoutedEventArgs e)
@@ -115,66 +117,66 @@ namespace CITOGAU
 
         private void ExportToExcel_Click(object sender, RoutedEventArgs e)
         {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-            // Открываем диалог для сохранения файла
-            SaveFileDialog saveFileDialog = new SaveFileDialog
-            {
-                Filter = "Excel files (*.xlsx)|*.xlsx",
-                FileName = "Отчеты.xlsx"
-            };
+            //// Открываем диалог для сохранения файла
+            //SaveFileDialog saveFileDialog = new SaveFileDialog
+            //{
+            //    Filter = "Excel files (*.xlsx)|*.xlsx",
+            //    FileName = "Отчеты.xlsx"
+            //};
 
-            if (saveFileDialog.ShowDialog() == true)
-            {
-                // Создаем новый Excel файл
-                using (ExcelPackage package = new ExcelPackage())
-                {
-                    ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Отчеты");
+            //if (saveFileDialog.ShowDialog() == true)
+            //{
+            //    // Создаем новый Excel файл
+            //    using (ExcelPackage package = new ExcelPackage())
+            //    {
+            //        ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Отчеты");
 
-                    // Заполняем заголовки
-                    worksheet.Cells[1, 1].Value = "ID";
-                    worksheet.Cells[1, 2].Value = "Аудитория";
-                    worksheet.Cells[1, 3].Value = "Здание";
-                    worksheet.Cells[1, 4].Value = "Дата создания";
-                    worksheet.Cells[1, 5].Value = "Дата завершения";
-                    worksheet.Cells[1, 6].Value = "Статус";
-                    worksheet.Cells[1, 7].Value = "Автор";
-                    worksheet.Cells[1, 8].Value = "Исполнитель";
+            //        // Заполняем заголовки
+            //        worksheet.Cells[1, 1].Value = "ID";
+            //        worksheet.Cells[1, 2].Value = "Аудитория";
+            //        worksheet.Cells[1, 3].Value = "Здание";
+            //        worksheet.Cells[1, 4].Value = "Дата создания";
+            //        worksheet.Cells[1, 5].Value = "Дата завершения";
+            //        worksheet.Cells[1, 6].Value = "Статус";
+            //        worksheet.Cells[1, 7].Value = "Автор";
+            //        worksheet.Cells[1, 8].Value = "Исполнитель";
 
-                    // Стиль для заголовков
-                    using (var range = worksheet.Cells[1, 1, 1, 8])
-                    {
-                        range.Style.Font.Bold = true;
-                        range.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                        range.Style.Fill.PatternType = ExcelFillStyle.Solid;
-                        range.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightGray);
-                    }
+            //        // Стиль для заголовков
+            //        using (var range = worksheet.Cells[1, 1, 1, 8])
+            //        {
+            //            range.Style.Font.Bold = true;
+            //            range.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            //            range.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            //            range.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightGray);
+            //        }
 
-                    // Получаем данные из ReportsDataGrid
-                    var tickets = ReportsDataGrid.ItemsSource as IEnumerable<Ticket>;
+            //        // Получаем данные из ReportsDataGrid
+            //        var tickets = ReportsDataGrid.ItemsSource as IEnumerable<Ticket>;
 
-                    if (tickets != null)
-                    {
-                        int row = 2; // Начинаем с 2-й строки, т.к. первая — заголовки
-                        foreach (var ticket in tickets)
-                        {
-                            worksheet.Cells[row, 1].Value = ticket.ID_Ticket;
-                            worksheet.Cells[row, 2].Value = ticket.AudienceNumber;
-                            worksheet.Cells[row, 3].Value = ticket.BuildingNumber;
-                            worksheet.Cells[row, 4].Value = ticket.DateOfCreation?.ToString("dd.MM.yyyy");
-                            worksheet.Cells[row, 5].Value = ticket.DateOfCompletion?.ToString("dd.MM.yyyy");
-                            worksheet.Cells[row, 6].Value = ticket.Status;
-                            worksheet.Cells[row, 7].Value = ticket.Author; // Здесь можешь добавить приведение автора к строке, если нужно ФИО
-                            worksheet.Cells[row, 8].Value = ticket.Executor.HasValue ? ticket.Executor.ToString() : "Не назначен";
-                            row++;
-                        }
-                    }
+            //        if (tickets != null)
+            //        {
+            //            int row = 2; // Начинаем с 2-й строки, т.к. первая — заголовки
+            //            foreach (var ticket in tickets)
+            //            {
+            //                worksheet.Cells[row, 1].Value = ticket.ID_Ticket;
+            //                worksheet.Cells[row, 2].Value = ticket.AudienceNumber;
+            //                worksheet.Cells[row, 3].Value = ticket.BuildingNumber;
+            //                worksheet.Cells[row, 4].Value = ticket.DateOfCreation?.ToString("dd.MM.yyyy");
+            //                worksheet.Cells[row, 5].Value = ticket.DateOfCompletion?.ToString("dd.MM.yyyy");
+            //                worksheet.Cells[row, 6].Value = ticket.Status;
+            //                worksheet.Cells[row, 7].Value = ticket.Author; // Здесь можешь добавить приведение автора к строке, если нужно ФИО
+            //                worksheet.Cells[row, 8].Value = ticket.Executor.HasValue ? ticket.Executor.ToString() : "Не назначен";
+            //                row++;
+            //            }
+            //        }
 
-                    // Сохраняем файл
-                    File.WriteAllBytes(saveFileDialog.FileName, package.GetAsByteArray());
-                    MessageBox.Show("Отчеты успешно экспортированы в Excel.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-            }
+            //        // Сохраняем файл
+            //        File.WriteAllBytes(saveFileDialog.FileName, package.GetAsByteArray());
+            //        MessageBox.Show("Отчеты успешно экспортированы в Excel.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    }
+            //}
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {

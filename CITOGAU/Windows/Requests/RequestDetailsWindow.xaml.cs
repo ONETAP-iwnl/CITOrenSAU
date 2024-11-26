@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CITOGAU.ApiContext;
+using CITOGAU.Classes.Tickets;
 
 namespace CITOGAU
 {

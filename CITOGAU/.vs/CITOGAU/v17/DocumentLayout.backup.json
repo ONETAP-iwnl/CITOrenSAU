@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\windows\\login\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\login\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\requests\\requestlistcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\requests\\requestlistcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\classes\\tickets\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\apicontext\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:apicontext\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\requests\\requestdetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\requests\\requestdetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\reports\\reportswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\reports\\reportswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\reports\\reportswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\reports\\reportswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\requests\\createrequestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\requests\\createrequestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\apicontext\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:apicontext\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\windows\\requests\\requestlistcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\requests\\requestlistcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\classes\\tickets\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:classes\\tickets\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\classes\\users\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:classes\\users\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\windows\\login\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:windows\\login\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\apicontext\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:apicontext\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|c:\\users\\romka\\source\\repos\\onetap-iwnl\\citorensau\\citogau\\interface\\tickets\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E40846-2B80-4415-93C0-9A426AE1C740}|CITOGAU.csproj|solutionrelative:interface\\tickets\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,21 +50,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Tickets\\Ticket.cs",
-              "RelativeDocumentMoniker": "Classes\\Tickets\\Ticket.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Tickets\\Ticket.cs",
-              "RelativeToolTip": "Classes\\Tickets\\Ticket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T14:31:14.993Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -80,52 +87,129 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserResponse.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Users\\UserResponse.cs",
-              "RelativeDocumentMoniker": "Classes\\Users\\UserResponse.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Users\\UserResponse.cs",
-              "RelativeToolTip": "Classes\\Users\\UserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Title": "RequestDetailsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestDetailsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Requests\\RequestDetailsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestDetailsWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\Requests\\RequestDetailsWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T13:06:30.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Login\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\Login\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Login\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\Login\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:14:10.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Login\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\Login\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Login\\LoginWindow.xaml",
-              "RelativeToolTip": "Windows\\Login\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-24T10:14:10.861Z",
+              "WhenOpened": "2024-11-26T14:27:02.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "ApiContext\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\AuthService.cs",
-              "RelativeToolTip": "ApiContext\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
+              "Title": "ReportsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Reports\\ReportsWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\Reports\\ReportsWindow.xaml",
+              "ToolTip": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Reports\\ReportsWindow.xaml",
+              "RelativeToolTip": "Windows\\Reports\\ReportsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T14:26:20.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReportsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Reports\\ReportsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Reports\\ReportsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Reports\\ReportsWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\Reports\\ReportsWindow.xaml.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAUwLIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:14:10.86Z",
+              "WhenOpened": "2024-11-26T14:26:07.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ApiContext\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\UserService.cs",
+              "RelativeToolTip": "ApiContext\\Services\\UserService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:25:49.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITicketService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Interface\\Tickets\\ITicketService.cs",
+              "RelativeDocumentMoniker": "Interface\\Tickets\\ITicketService.cs",
+              "ToolTip": "C:\\Users\\romka\\Source\\Repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Interface\\Tickets\\ITicketService.cs",
+              "RelativeToolTip": "Interface\\Tickets\\ITicketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:59:51.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestListControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestListControl.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Requests\\RequestListControl.xaml.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestListControl.xaml.cs*",
+              "RelativeToolTip": "Windows\\Requests\\RequestListControl.xaml.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAD4vxsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:55:50.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\TicketService.cs",
+              "RelativeDocumentMoniker": "ApiContext\\Services\\TicketService.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\ApiContext\\Services\\TicketService.cs",
+              "RelativeToolTip": "ApiContext\\Services\\TicketService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:51:19.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateRequestWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\CreateRequestWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Requests\\CreateRequestWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\CreateRequestWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\Requests\\CreateRequestWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA6wC4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:27:42.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RequestListControl.xaml",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestListControl.xaml",
+              "RelativeDocumentMoniker": "Windows\\Requests\\RequestListControl.xaml",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Windows\\Requests\\RequestListControl.xaml",
+              "RelativeToolTip": "Windows\\Requests\\RequestListControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T13:50:28.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Tickets\\Ticket.cs",
+              "RelativeDocumentMoniker": "Classes\\Tickets\\Ticket.cs",
+              "ToolTip": "C:\\Users\\romka\\source\\repos\\ONETAP-iwnl\\CITOrenSAU\\CITOGAU\\Classes\\Tickets\\Ticket.cs",
+              "RelativeToolTip": "Classes\\Tickets\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T14:31:14.993Z",
               "EditorCaption": ""
             }
           ]

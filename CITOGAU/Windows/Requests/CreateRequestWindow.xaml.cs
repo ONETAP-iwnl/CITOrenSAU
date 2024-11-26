@@ -1,4 +1,6 @@
-﻿using CITOGAU.ApiContext;
+﻿using CITOGAU.ApiContext.Service;
+using CITOGAU.Classes.Tickets;
+using CITOGAU.Classes.Users;
 using System;
 using System.Windows;
 
@@ -17,32 +19,32 @@ namespace CITOGAU.Windows.Requests
 
         private async void CreateRequestButton_Click(object sender, RoutedEventArgs e)
         {
-            // Получаем ФИО текущего пользователя из SessionManager
-            int currentUserFIO = SessionManager.CurrentUser.ID_User;
+            //// Получаем ФИО текущего пользователя из SessionManager
+            //int currentUserFIO = SessionManager.CurrentUser.ID_User;
 
-            Ticket ticket = new Ticket
-            {
-                AudienceNumber = AudienceTextBox.Text,
-                BuildingNumber = BuildingTextBox.Text,
-                DateOfCreation = DateTime.Now,
-                Status = "Новая",
-                Author = currentUserFIO,  // Используем ФИО текущего пользователя
-                Type = ProblemTypeTextBox.Text,
-                Description = DescriptionTextBox.Text
-            };
+            //Ticket ticket = new Ticket
+            //{
+            //    AudienceNumber = AudienceTextBox.Text,
+            //    BuildingNumber = BuildingTextBox.Text,
+            //    DateOfCreation = DateTime.Now,
+            //    Status = "Новая",
+            //    Author = currentUserFIO,  // Используем ФИО текущего пользователя
+            //    Type = ProblemTypeTextBox.Text,
+            //    Description = DescriptionTextBox.Text
+            //};
 
-            // Сохраняем заявку
-            var newTicket = await _ticketService.CreateTicket(ticket);
-            if (newTicket != null)
-            {
-                MessageBox.Show("Заявка успешно создана", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                await _requestListControl.LoadRequests();
-                this.Close();
-            }
-            else
-            {
-                Console.WriteLine($"Ошибка: {ticket}");
-            }
+            //// Сохраняем заявку
+            //var newTicket = await _ticketService.CreateTicket(ticket);
+            //if (newTicket != null)
+            //{
+            //    MessageBox.Show("Заявка успешно создана", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    await _requestListControl.LoadRequests();
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Ошибка: {ticket}");
+            //}
         }
     }
 }

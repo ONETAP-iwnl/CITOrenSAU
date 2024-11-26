@@ -9,10 +9,12 @@ using System.Net.Sockets;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using CITOGAU.Classes.Tickets;
+using CITOGAU.Interface.Tickets;
 
-namespace CITOGAU.ApiContext
+namespace CITOGAU.ApiContext.Service
 {
-    public class TicketService
+    public class TicketService: ITicketService
     {
         private readonly HttpClient _httpClient;
         public TicketService(string baseAddress)
@@ -30,47 +32,27 @@ namespace CITOGAU.ApiContext
             };
         }
 
-        public async Task<List<Ticket>> GetAllTicket()
+        public async Task<List<Ticket>> GetAllTicketsAsync()
         {
-            try
-            {
-                var response = await _httpClient.GetAsync("/TicketContoller/all");
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<List<Ticket>>(content);
-                }
-                else
-                {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Error: {response.StatusCode}, Content: {errorContent}");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Exception: {ex.Message}");
-            }
-
-            return null;
+            var response = await _httpClient.GetAsync("/Ticket/all");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<Ticket>>(content);
         }
-        public async Task<List<Ticket>> CreateTicket(Ticket newTicket)
+
+        public async Task<Ticket> CreateTicketAsync(Ticket newTicket)
         {
             var content = new StringContent(JsonConvert.SerializeObject(newTicket), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync($"/TicketContoller/createTicket", content);
-            if (response.IsSuccessStatusCode)
-            {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                var userResponse = JsonConvert.DeserializeObject<Ticket>(responseContent);
-                return new List<Ticket> { userResponse };
-            }
-            Console.WriteLine($"Ticket failed: {response.StatusCode}, {await response.Content.ReadAsStringAsync()}");
-            return null;
+            var response = await _httpClient.PostAsync("/Ticket/create", content);
+            response.EnsureSuccessStatusCode();
+            var responseContent = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<Ticket>(responseContent);
         }
 
-        public async Task UpdateTicket(Ticket ticket)
+        public async Task UpdateTicketAsync(Ticket ticket)
         {
             var content = new StringContent(JsonConvert.SerializeObject(ticket), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PutAsync("TicketContoller/updateTicket", content);
+            var response = await _httpClient.PutAsync("/Ticket/update", content);
             response.EnsureSuccessStatusCode();
         }
     }
