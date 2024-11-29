@@ -5,18 +5,16 @@
     <Grid>
         <StackPanel Margin="20">
             <TextBlock Text="Подробности заявки" FontSize="18" FontWeight="Bold" Foreground="#588157" Margin="0,0,0,10"/>
-            <TextBlock Text="ID:" FontWeight="Bold"/>
+            <TextBlock Text="Номер заявки:" FontWeight="Bold"/>
             <TextBlock Text="{Binding ID_Ticket}" Foreground="Black"/>
-            <TextBlock Text="Номер аудитории:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding AudienceNumber}" Foreground="Black"/>
-            <TextBlock Text="Номер корпуса:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding BuildingNumber}" Foreground="Black"/>
+            <TextBlock Text="Подразделение:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding ID_Department}" Foreground="Black" Height="30"/>
             <TextBlock Text="Дата создания:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding DateOfCreation}" Foreground="Black"/>
             <TextBlock Text="Дата выполнения:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding DateOfCompletion}" TextWrapping="Wrap" Foreground="Black"/>
             <TextBlock Text="Статус:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding Status}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="{Binding StatusName}" TextWrapping="Wrap" Foreground="Black"/>
             <TextBlock Text="Автор:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding AuthorName}" TextWrapping="Wrap" Foreground="Black"/>
             <TextBlock Text="Исполнитель:" FontWeight="Bold" Margin="0,10,0,0"/>

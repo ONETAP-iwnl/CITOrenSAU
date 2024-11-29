@@ -10,7 +10,7 @@
                 <DataGridTextColumn Header="Подразделение" Binding="{Binding ID_Department}" Width="*"/>
                 <DataGridTextColumn Header="Дата создания" Binding="{Binding DateOfCreation}" Width="*"/>
                 <DataGridTextColumn Header="Дата завершения" Binding="{Binding DateOfCompletion}" Width="*"/>
-                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding StatusName}" Width="*"/>
                 <DataGridTextColumn Header="Автор" Binding="{Binding AuthorName}" Width="*"/>
                 <DataGridTextColumn Header="Исполнитель" Binding="{Binding ExecutorName}" Width="*"/>
                 <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="*"/>

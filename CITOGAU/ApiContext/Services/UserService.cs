@@ -1,4 +1,9 @@
-﻿using CITOGAU.Classes.Users;
+﻿using CITOGAU.Classes.Authors;
+using CITOGAU.Classes.Executors;
+using CITOGAU.Classes.Users;
+using CITOGAU.Interface.Authors;
+using CITOGAU.Interface.Executors;
+using CITOGAU.Interface.Users;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace CITOGAU.ApiContext
 {
-    public class UserService
+    public class UserService: IUserService, IAuthorsService, IExecutorsService
     {
         private readonly HttpClient _httpClient;
 
@@ -49,6 +54,52 @@ namespace CITOGAU.ApiContext
                 Console.WriteLine($"Exception: {ex.Message}");
             }
 
+            return null;
+        }
+
+        public async Task<List<Authors>> GetAllAuthorsAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync("/Authors/allAuthors");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<List<Authors>>(content);
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error: {response.StatusCode}, Content: {errorContent}");
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
+            return null;
+        }
+
+        public async Task<List<Executors>> GetAllExecutorsAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync("/Executors/allExecutors");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<List<Executors>>(content);
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error: {response.StatusCode}, Content: {errorContent}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
             return null;
         }
     }
