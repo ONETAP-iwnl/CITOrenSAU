@@ -25,12 +25,14 @@
             <ScrollViewer VerticalScrollBarVisibility="Auto" Height="300">
                 <DataGrid x:Name="ReportsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Loaded="ReportsWindow_Loaded">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ID" Binding="{Binding ID_Ticket}" Width="50"/>
-                        <DataGridTextColumn Header="Заголовок" Binding="{Binding Description}" Width="*"/>
-                        <DataGridTextColumn Header="Дата создания" Binding="{Binding DateOfCreation}" Width="150"/>
-                        <DataGridTextColumn Header="Дата завершения" Binding="{Binding DateOfCompletion}" Width="150"/>
-                        <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
-                        <DataGridTextColumn Header="Исполнитель" Binding="{Binding ExecutorName}" Width="100"/>
+                        <DataGridTextColumn Header="Номер тикета" Binding="{Binding ID_Ticket}" Width="*"/>
+                        <DataGridTextColumn Header="Подразделение" Binding="{Binding DepartmentName}" Width="*"/>
+                        <DataGridTextColumn Header="Дата создания" Binding="{Binding DateOfCreation}" Width="*"/>
+                        <DataGridTextColumn Header="Дата завершения" Binding="{Binding DateOfCompletion}" Width="*"/>
+                        <DataGridTextColumn Header="Статус" Binding="{Binding StatusName}" Width="*"/>
+                        <DataGridTextColumn Header="Автор" Binding="{Binding AuthorName}" Width="*"/>
+                        <DataGridTextColumn Header="Исполнитель" Binding="{Binding ExecutorName}" Width="*"/>
+                        <DataGridTextColumn Header="Тип" Binding="{Binding RequestTypeName}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </ScrollViewer>

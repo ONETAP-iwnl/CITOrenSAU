@@ -7,14 +7,17 @@ using CITOGAU.Interface.Department;
 using CITOGAU.Interface.RequestType;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Data;
 
 namespace CITOGAU.Windows.Requests
 {
-    public partial class CreateRequestWindow : Window
+    public partial class CreateRequestWindow : Window, INotifyPropertyChanged
     {
         private TicketService _ticketService;
         private readonly IRequestTypeService _requestTypeService;
@@ -28,7 +31,22 @@ namespace CITOGAU.Windows.Requests
             _requestTypeService = new RequestTypesService("https://26.240.38.124:7215");
             _departmentService = new DepartmentService("https://26.240.38.124:7215");
 
+            DataContext = this;
         }
+
+
+        private List<DepartmentGroup> _departmentGroups;
+        public List<DepartmentGroup> DepartmentGroups
+        {
+            get => _departmentGroups;
+            set
+            {
+                _departmentGroups = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await LoadRequestType();
@@ -44,61 +62,59 @@ namespace CITOGAU.Windows.Requests
 
         private async Task LoadDepartment()
         {
-            var groupedDepartments = await GetGroupedDepartmentsAsync();
-            DepartmentComboBox.ItemsSource = groupedDepartments.View;
-        }
-
-        private async Task<CollectionViewSource> GetGroupedDepartmentsAsync()
-        {
             var departmentTypes = await _departmentService.GetAllDepartmentTypeAsync();
             var departments = await _departmentService.GetAllDepartmentAsync();
 
-            foreach (var department in departments)
+            var groupedDepartments = departmentTypes.Select(dt => new DepartmentGroup
             {
-                var departmentType = departmentTypes.FirstOrDefault(dt => dt.ID_DepartmentType == department.ID_DepartmentType);
-                if (departmentType != null)
-                {
-                    departmentType.Departments.Add(department);
-                }
-            }
+                DepartmentTypeName = dt.DepartmentTypeName,
+                Departments = departments.Where(d => d.ID_Department == dt.ID_DepartmentType).ToList()
+            }).ToList();
 
-            var collectionViewSource = new CollectionViewSource();
-            collectionViewSource.Source = departmentTypes.SelectMany(dt => dt.Departments.Select(d => new { dt.DepartmentTypeName, d.DepartmentName }));
-            collectionViewSource.GroupDescriptions.Add(new PropertyGroupDescription("DepartmentTypeName"));
+            DepartmentGroups = groupedDepartments;
 
-            return collectionViewSource;
+            var lcv = new ListCollectionView(groupedDepartments);
+            lcv.GroupDescriptions.Add(new PropertyGroupDescription("DepartmentTypeName"));
+
+            DepartmentComboBox.ItemsSource = lcv;
         }
 
 
-
-        private async void CreateRequestButton_Click(object sender, RoutedEventArgs e)
+        private void CreateRequestButton_Click(object sender, RoutedEventArgs e)
         {
-            //// Получаем ФИО текущего пользователя из SessionManager
-            //int currentUserFIO = SessionManager.CurrentUser.ID_User;
+        //// Получаем ФИО текущего пользователя из SessionManager
+        //int currentUserFIO = SessionManager.CurrentUser.ID_User;
 
-            //Ticket ticket = new Ticket
-            //{
-            //    AudienceNumber = AudienceTextBox.Text,
-            //    BuildingNumber = BuildingTextBox.Text,
-            //    DateOfCreation = DateTime.Now,
-            //    Status = "Новая",
-            //    Author = currentUserFIO,  // Используем ФИО текущего пользователя
-            //    Type = ProblemTypeTextBox.Text,
-            //    Description = DescriptionTextBox.Text
-            //};
+        //Ticket ticket = new Ticket
+        //{
+        //    AudienceNumber = AudienceTextBox.Text,
+        //    BuildingNumber = BuildingTextBox.Text,
+        //    DateOfCreation = DateTime.Now,
+        //    Status = "Новая",
+        //    Author = currentUserFIO,  // Используем ФИО текущего пользователя
+        //    Type = ProblemTypeTextBox.Text,
+        //    Description = DescriptionTextBox.Text
+        //};
 
-            //// Сохраняем заявку
-            //var newTicket = await _ticketService.CreateTicket(ticket);
-            //if (newTicket != null)
-            //{
-            //    MessageBox.Show("Заявка успешно создана", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-            //    await _requestListControl.LoadRequests();
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Ошибка: {ticket}");
-            //}
+        //// Сохраняем заявку
+        //var newTicket = await _ticketService.CreateTicket(ticket);
+        //if (newTicket != null)
+        //{
+        //    MessageBox.Show("Заявка успешно создана", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+        //    await _requestListControl.LoadRequests();
+        //    this.Close();
+        //}
+        //else
+        //{
+        //    Console.WriteLine($"Ошибка: {ticket}");
+        //}
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
     }
 }

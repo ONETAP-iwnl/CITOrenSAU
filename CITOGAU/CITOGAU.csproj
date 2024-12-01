@@ -114,6 +114,7 @@
     <Compile Include="ApiContext\Services\RequestTypesService.cs" />
     <Compile Include="Classes\Authors\Authors.cs" />
     <Compile Include="Classes\Department\Department.cs" />
+    <Compile Include="Classes\Department\DepartmentGroup.cs" />
     <Compile Include="Classes\Department\DepartmentType.cs" />
     <Compile Include="Classes\Executors\Executors.cs" />
     <Compile Include="Classes\RequestType\RequestTypes.cs" />
