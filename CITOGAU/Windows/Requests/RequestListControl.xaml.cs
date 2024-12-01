@@ -6,9 +6,12 @@ using System.Windows;
 using System.Windows.Controls;
 using CITOGAU.ApiContext;
 using CITOGAU.ApiContext.Service;
+using CITOGAU.ApiContext.Services;
 using CITOGAU.Classes.Tickets;
 using CITOGAU.Interface.Authors;
+using CITOGAU.Interface.Department;
 using CITOGAU.Interface.Executors;
+using CITOGAU.Interface.RequestType;
 using CITOGAU.Interface.Tickets;
 using CITOGAU.Interface.Users;
 
@@ -20,6 +23,8 @@ namespace CITOGAU.Windows.Requests
         private readonly IUserService _userService;
         private readonly IAuthorsService _authorsService;
         private readonly IExecutorsService _executorsService;
+        private readonly IDepartmentService _departmentService;
+        private readonly IRequestTypeService _requestTypeService;
         public RequestListControl()
         {
             InitializeComponent();
@@ -27,6 +32,8 @@ namespace CITOGAU.Windows.Requests
             _userService = new UserService("https://26.240.38.124:5235");
             _authorsService = new UserService("https://26.240.38.124:5235");
             _executorsService = new UserService("https://26.240.38.124:5235");
+            _departmentService = new DepartmentService("https://26.240.38.124:7215");
+            _requestTypeService = new RequestTypesService("https://26.240.38.124:7215");
         }
 
         public async void Request_Loaded(object sender, RoutedEventArgs e)
@@ -40,6 +47,8 @@ namespace CITOGAU.Windows.Requests
             var users = await _userService.GetAllUserAsync();
             var authors = await _authorsService.GetAllAuthorsAsync();
             var executors = await _executorsService.GetAllExecutorsAsync();
+            var department = await _departmentService.GetAllDepartmentAsync();
+            var requestType = await _requestTypeService.GetAllRequestsAsync();
 
 
             var statusDictionary = new Dictionary<int, string>
@@ -77,6 +86,27 @@ namespace CITOGAU.Windows.Requests
                             }
                         }
                     }
+                    var departmentLink = department.FirstOrDefault(e => e.ID_Department == ticket.ID_Department);
+                    if(departmentLink != null)
+                    {
+                        var _department = department.FirstOrDefault(e => e.ID_Department == departmentLink.ID_Department);
+                        if(_department != null)
+                        {
+                            ticket.DepartmentName = _department.DepartmentName;
+                        }
+                    }
+
+                    var requestTypeLink = requestType.FirstOrDefault(e => e.ID_RequestType == ticket.Type);
+                    if(requestTypeLink != null)
+                    {
+                        var _requestType = requestType.FirstOrDefault(e => e.ID_RequestType == requestTypeLink.ID_RequestType);
+                        if( _requestType != null)
+                        {
+                            ticket.RequestTypeName = _requestType.RequestTypeName;
+                        }
+                    }
+
+
                     if (statusDictionary.TryGetValue(ticket.Status, out var status))
                     {
                         ticket.StatusName = status;

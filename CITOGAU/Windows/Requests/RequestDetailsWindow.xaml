@@ -8,7 +8,7 @@
             <TextBlock Text="Номер заявки:" FontWeight="Bold"/>
             <TextBlock Text="{Binding ID_Ticket}" Foreground="Black"/>
             <TextBlock Text="Подразделение:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding ID_Department}" Foreground="Black" Height="30"/>
+            <TextBlock Text="{Binding DepartmentName}" Foreground="Black" Height="30"/>
             <TextBlock Text="Дата создания:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding DateOfCreation}" Foreground="Black"/>
             <TextBlock Text="Дата выполнения:" FontWeight="Bold" Margin="0,10,0,0"/>
@@ -20,7 +20,7 @@
             <TextBlock Text="Исполнитель:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding ExecutorName}" TextWrapping="Wrap" Foreground="Black"/>
             <TextBlock Text="Тип проблемы:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding Type}" TextWrapping="Wrap" Foreground="Black"/>
+            <TextBlock Text="{Binding RequestTypeName}" TextWrapping="Wrap" Foreground="Black"/>
             <TextBlock Text="Описание:" FontWeight="Bold" Margin="0,10,0,0"/>
             <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Foreground="Black"/>
         </StackPanel>

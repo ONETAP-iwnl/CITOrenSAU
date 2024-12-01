@@ -20,5 +20,8 @@ namespace CITOGAU.Classes.Tickets
         public string AuthorName { get; set; }
         public string ExecutorName { get; set; }
         public string StatusName { get; set; }
+
+        public string DepartmentName { get; set; }
+        public string RequestTypeName { get; set; }
     }
 }

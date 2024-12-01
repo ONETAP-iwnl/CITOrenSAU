@@ -110,10 +110,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ApiContext\Services\DepartmentService.cs" />
+    <Compile Include="ApiContext\Services\RequestTypesService.cs" />
     <Compile Include="Classes\Authors\Authors.cs" />
+    <Compile Include="Classes\Department\Department.cs" />
+    <Compile Include="Classes\Department\DepartmentType.cs" />
     <Compile Include="Classes\Executors\Executors.cs" />
+    <Compile Include="Classes\RequestType\RequestTypes.cs" />
     <Compile Include="Interface\Authors\IAuthorsService.cs" />
+    <Compile Include="Interface\Department\IDepartmentService.cs" />
     <Compile Include="Interface\Executors\IExecutorsService.cs" />
+    <Compile Include="Interface\RequestType\IRequestTypeService.cs" />
     <Compile Include="Interface\Tickets\ITicketService.cs" />
     <Compile Include="Interface\Users\IUserService.cs" />
     <Compile Include="Windows\About\AboutWindow.xaml.cs">
@@ -237,5 +244,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
