@@ -11,7 +11,6 @@
 * [Entity Framework Core](https://docs.microsoft.com/ru-ru/ef/core/)
 * Unit Tests
 * [Docker](https://www.docker.com/)
-* [RabbitMQ](https://www.rabbitmq.com/)
 
   ### Функциональность проекта
 Возможности клиента:
@@ -24,3 +23,4 @@
   - отменить созданный тикет
 3. На микросервисе UserService:
   - получение всех юзеров
+  - регистрация пользователя
