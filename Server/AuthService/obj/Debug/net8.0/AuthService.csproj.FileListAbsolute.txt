@@ -352,3 +352,4 @@ c:\Users\ромка\Documents\GitRepos\CITOrenSAU\Server\AuthService\obj\Debug\n
 c:\Users\ромка\Documents\GitRepos\CITOrenSAU\Server\AuthService\obj\Debug\net8.0\AuthService.genruntimeconfig.cache
 c:\Users\ромка\Documents\GitRepos\CITOrenSAU\Server\AuthService\obj\Debug\net8.0\ref\AuthService.dll
 C:\Users\romka\Source\Repos\ONETAP-iwnl\CITOrenSAU\Server\AuthService\bin\Debug\net8.0\BCrypt.Net-Next.dll
+c:\Users\ромка\Documents\GitRepos\CITOrenSAU\Server\AuthService\bin\Debug\net8.0\BCrypt.Net-Next.dll

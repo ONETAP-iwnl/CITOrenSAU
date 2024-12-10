@@ -39,7 +39,7 @@ namespace AuthService
 
             app.MapControllers();
 
-            app.Run("https://0.0.0.0:7086");
+            app.Run("https://26.240.38.124:7086");
 
             app.Run();
         }

@@ -22,15 +22,20 @@ namespace TicketManager.Service
             return await _ticketRepository.GetTicketByIdAsync(ticketId);
         }
 
-        public async Task<IEnumerable<Ticket>> GetTicketsByStatusAsync(string status)
+        public async Task<IEnumerable<Ticket>> GetTicketsByStatusAsync(int statusId)
         {
-            return await _ticketRepository.GetTicketsByStatusAsync(status);
+            return await _ticketRepository.GetTicketsByStatusAsync(statusId);
         }
 
         public async Task<Ticket> CreateTicketAsync(Ticket newTicket)
         {
             newTicket.DateOfCreation = DateTime.UtcNow;
             return await _ticketRepository.CreateTicketAsync(newTicket);
+        }
+
+        public async Task<bool> UpdateTicketStatusAsync(int ticketId, int statusId)
+        {
+            return await _ticketRepository.UpdateTicketStatusAsync(ticketId, statusId);
         }
     }
 }

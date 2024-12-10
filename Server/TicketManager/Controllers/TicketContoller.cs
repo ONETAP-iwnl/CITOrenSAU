@@ -35,10 +35,10 @@ namespace TicketManager.Controllers
             return Ok(ticket);
         }
 
-        [HttpGet("status/{status}")]
-        public async Task<IActionResult> GetTicketsByStatus(string status)
+         [HttpGet("status/{statusId:int}")]
+        public async Task<IActionResult> GetTicketsByStatus(int statusId)
         {
-            var tickets = await _ticketService.GetTicketsByStatusAsync(status);
+            var tickets = await _ticketService.GetTicketsByStatusAsync(statusId);
             if (!tickets.Any())
             {
                 return NotFound();
@@ -63,6 +63,17 @@ namespace TicketManager.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
+        }
+
+        [HttpPut("{id:int}/status/{statusId:int}")]
+        public async Task<IActionResult> UpdateTicketStatus(int id, int statusId)
+        {
+            var result = await _ticketService.UpdateTicketStatusAsync(id, statusId);
+            if (!result)
+            {
+                return NotFound("Ticket not found");
+            }
+            return Ok("Ticket status updated successfully");
         }
     }
 }

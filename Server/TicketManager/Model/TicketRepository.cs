@@ -23,9 +23,9 @@ namespace TicketManager.Model
             return await _context.Tickets.FindAsync(ticketId);
         }
 
-        public async Task<IEnumerable<Ticket>> GetTicketsByStatusAsync(string status)
+        public async Task<IEnumerable<Ticket>> GetTicketsByStatusAsync(int statusId)
         {
-            return await _context.Tickets.Where(t => t.Status == status).ToListAsync();
+            return await _context.Tickets.Where(t => t.Status == statusId).ToListAsync();
         }
 
         public async Task<Ticket> CreateTicketAsync(Ticket newTicket)
@@ -33,6 +33,20 @@ namespace TicketManager.Model
             _context.Tickets.Add(newTicket);
             await _context.SaveChangesAsync();
             return newTicket;
+        }
+
+        public async Task<bool> UpdateTicketStatusAsync(int ticketId, int statusId)
+        {
+            var ticket = await _context.Tickets.FindAsync(ticketId);
+            if (ticket == null)
+            {
+                return false;
+            }
+
+            ticket.Status = statusId;
+            _context.Tickets.Update(ticket);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 
