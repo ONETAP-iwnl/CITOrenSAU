@@ -75,5 +75,16 @@ namespace TicketManager.Controllers
             }
             return Ok("Ticket status updated successfully");
         }
+
+        [HttpPut("{id:int}/assign/{executorId:int}")]
+        public async Task<IActionResult> AssignExecutorToTicket(int id, int executorId)
+        {
+            var result = await _ticketService.AssignExecutorToTicketAsync(id, executorId);
+            if (!result)
+            {
+                return NotFound("Ticket not found");
+            }
+            return Ok("Executor assigned successfully");
+        }
     }
 }

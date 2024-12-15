@@ -21,7 +21,7 @@ namespace UserService.Repository
 
         public async Task<Authors> GetAuthorsByUserIdAsync(int userId)
         {
-            return await  _context.Authors.FindAsync(userId);
+            return await _context.Authors.FirstOrDefaultAsync(x => x.ID_User == userId);
         }
     }
 }

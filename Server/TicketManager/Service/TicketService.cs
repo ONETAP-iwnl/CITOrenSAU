@@ -37,5 +37,9 @@ namespace TicketManager.Service
         {
             return await _ticketRepository.UpdateTicketStatusAsync(ticketId, statusId);
         }
+        public async Task<bool> AssignExecutorToTicketAsync(int ticketId, int executorId)
+        {
+            return await _ticketRepository.AssignExecutorToTicketAsync(ticketId, executorId);
+        }
     }
 }

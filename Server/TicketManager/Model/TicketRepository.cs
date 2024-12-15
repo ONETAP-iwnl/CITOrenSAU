@@ -48,6 +48,20 @@ namespace TicketManager.Model
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task<bool> AssignExecutorToTicketAsync(int ticketId, int executorId)
+        {
+            var ticket = await _context.Tickets.FindAsync(ticketId);
+            if (ticket == null)
+            {
+                return false;
+            }
+
+            ticket.Executor = executorId;
+            ticket.Status = 3;
+            _context.Tickets.Update(ticket);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 
 }
