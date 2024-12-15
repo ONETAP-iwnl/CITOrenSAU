@@ -16,5 +16,10 @@ namespace UserService.Service
         {
             return await _executorRepository.GetAllExecutorsAsync();
         }
+
+        public async Task<Executors> GetExecutorsByUserIdAsync(int userId)
+        {
+            return await _executorRepository.GetExecutorsByUserIdAsync(userId);
+        }
     }
 }
