@@ -17,5 +17,10 @@ namespace UserService.Repository
         {
             return await _context.Executors.ToListAsync();
         }
+        public async Task<Executors> GetExecutorsByUserIdAsync(int userId)
+        {
+            return await _context.Executors.FirstOrDefaultAsync(x => x.ID_User == userId);
+        }
+
     }
 }

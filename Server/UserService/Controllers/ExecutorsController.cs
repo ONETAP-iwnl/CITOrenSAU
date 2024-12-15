@@ -24,5 +24,12 @@ namespace UserService.Controllers
             var executors = await _executorsService.GetAllExecutorsAsync();
             return Ok(executors);
         }
+
+        [HttpGet("user/{userId}")]
+        public async Task<ActionResult<Authors>> GetAuthorByUserId(int userId)
+        {
+            var author = await _executorsService.GetExecutorsByUserIdAsync(userId);
+            return Ok(author);
+        }
     }
 }
