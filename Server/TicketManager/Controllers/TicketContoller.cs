@@ -86,5 +86,21 @@ namespace TicketManager.Controllers
             }
             return Ok("Executor assigned successfully");
         }
+
+        [HttpPut("dateComplition/{ticketId:int}")]
+        public async Task<IActionResult> UpdateTicketCompletionDateAsync(int ticketId, [FromBody] DateTime? completionDate)
+        {
+            if (!completionDate.HasValue)
+            {
+                return BadRequest("Completion date cannot be null");
+            }
+
+            var result = await _ticketService.UpdateTicketComplitionDateAsync(ticketId, completionDate.Value);
+            if (!result)
+            {
+                return NotFound("Ticket not found");
+            }
+            return Ok("Date updated successfully");
+        }
     }
 }

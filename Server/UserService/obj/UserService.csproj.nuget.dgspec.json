@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {}
+    "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {
+    "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
+        "projectUniqueName": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
+        "projectPath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\ромка\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\obj\\",
+        "outputPath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ромка\\AppData\\Roaming\\NuGet\\NuGet.Config",

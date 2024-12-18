@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uTwGKthHYRyXLTOTWTPNvvD43DntO8qt/vWzytBEN7JyQMgBlUyRii7i3YdXlPcnepjw7inaVKPYFUynEOhA4A==",
+  "dgSpecHash": "k91pL/iGiBcO/nJAFbcPERe3LhMkEQeaNq5QAzZK6ZfzLp6DCcqieFIhR+UavEwkA/VPVOoxSFFVw/vruI+Vjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
+  "projectFilePath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ромка\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ромка\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

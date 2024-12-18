@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj": {}
+    "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj": {
+    "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
+        "projectUniqueName": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
+        "projectPath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\AuthService.csproj",
         "packagesPath": "C:\\Users\\ромка\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\obj\\",
+        "outputPath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ромка\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RVfhswlBc38oUHShqclPzUjtcAW1EmDkKQ8LOZ79w3eHWavsKLCwv27I7KQ344n3fpx4+y1dNcGXHYC5W/nWFQ==",
+  "dgSpecHash": "PfsNADBHbiqFdyo3zXc89w2SEvH97nVYHRirJxnNn6dyudjCq5VdkhkycP1QoDnwdM3tAyPNVXXWLDOzZg4Rqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\TicketManager\\TicketManager.csproj",
+  "projectFilePath": "c:\\Users\\ромка\\Documents\\GitRepos\\CITOrenSAU\\Server\\TicketManager\\TicketManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ромка\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ромка\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

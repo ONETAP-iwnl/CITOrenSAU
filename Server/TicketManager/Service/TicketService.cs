@@ -41,5 +41,9 @@ namespace TicketManager.Service
         {
             return await _ticketRepository.AssignExecutorToTicketAsync(ticketId, executorId);
         }
+        public async Task<bool> UpdateTicketComplitionDateAsync(int ticketId, DateTime? completionDate)
+        {
+            return await _ticketRepository.UpdateTicketComplitionDateAsync(ticketId, completionDate);
+        }
     }
 }

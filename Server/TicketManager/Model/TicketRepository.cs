@@ -62,6 +62,19 @@ namespace TicketManager.Model
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<bool> UpdateTicketComplitionDateAsync(int ticketId, DateTime? completionDate)
+        {
+            var ticket = await _context.Tickets.FindAsync(ticketId);
+            if(ticket == null)
+            {
+                return false;
+            }
+            ticket.DateOfCompletion = completionDate;
+            _context.Tickets.Update(ticket);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 
 }

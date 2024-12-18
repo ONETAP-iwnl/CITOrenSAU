@@ -10,5 +10,6 @@ namespace TicketManager.Interface
         Task<Ticket> CreateTicketAsync(Ticket newTicket);
         Task<bool> UpdateTicketStatusAsync(int ticketId, int statusId);
         Task<bool> AssignExecutorToTicketAsync(int ticketId, int executorId);
+        Task<bool> UpdateTicketComplitionDateAsync(int ticketId, DateTime? completionDate);
     }
 }
