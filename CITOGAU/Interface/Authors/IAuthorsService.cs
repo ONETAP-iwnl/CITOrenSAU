@@ -10,5 +10,7 @@ namespace CITOGAU.Interface.Authors
     public interface IAuthorsService //ISP
     {
         Task<List<Classes.Authors.Authors>> GetAllAuthorsAsync();
+
+        Task<int?> GetAuthorByUserIdAsync(int  userId);
     }
 }

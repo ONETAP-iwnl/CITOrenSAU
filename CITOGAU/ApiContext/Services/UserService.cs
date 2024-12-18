@@ -102,5 +102,53 @@ namespace CITOGAU.ApiContext
             }
             return null;
         }
+
+        public async Task<int?> GetAuthorByUserIdAsync(int  userId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"/Authors/user/{userId}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    var author = JsonConvert.DeserializeObject<Authors>(content);
+                    return author?.ID_Author;
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error: {response.StatusCode}, Content: {errorContent}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
+            return null;
+        }
+
+        public async Task<int?> GetExecutorsByUserIdAsync(int userId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"/Executors/user/{userId}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    var executors = JsonConvert.DeserializeObject<Executors>(content);
+                    return executors?.ID_Executor;
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error: {response.StatusCode}, Content: {errorContent}");
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
+            return null;
+        }
     }
 }

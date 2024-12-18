@@ -10,6 +10,6 @@ namespace CITOGAU.Interface.Department
     public interface IDepartmentService //ISP
     {
         Task<List<Classes.Department.Department>> GetAllDepartmentAsync();
-        Task<List<Classes.Department.DepartmentType>> GetAllDepartmentTypeAsync();
+        Task<List<Classes.Department.DepartmentTypes>> GetAllDepartmentTypeAsync();
     }
 }

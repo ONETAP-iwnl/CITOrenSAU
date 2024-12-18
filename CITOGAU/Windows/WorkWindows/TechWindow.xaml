@@ -2,7 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Заявки тех. специалиста" Height="500" Width="900" WindowStartupLocation="CenterScreen"
-        Background="#DAD7CD">
+        Background="#DAD7CD"
+        Loaded="Request_Loaded">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,10">
@@ -15,12 +16,23 @@
                   RowBackground="White" BorderBrush="#6C806F" BorderThickness="1" Height="250">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ID_Ticket}" Width="50"/>
-                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
-                <DataGridTextColumn Header="Создано" Binding="{Binding DateOfCreation}" Width="150"/>
-                <DataGridTextColumn Header="Автор" Binding="{Binding AuthorName}" Width="150"/>
-                <DataGridTextColumn Header="Исполнитель" Binding="{Binding ExecutorName}" Width="150"/>
-                <DataGridTextColumn Header="Дата завершения" Binding="{Binding DateOfCompletion}" Width="150"/>
+                <DataGridTextColumn Header="Номер тикета" Binding="{Binding ID_Ticket}" Width="*"/>
+                <DataGridTextColumn Header="Подразделение" Binding="{Binding DepartmentName}" Width="*"/>
+                <DataGridTextColumn Header="Дата создания" Binding="{Binding DateOfCreation}" Width="*"/>
+                <DataGridTextColumn Header="Дата завершения" Binding="{Binding DateOfCompletion}" Width="*"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding StatusName}" Width="*"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding AuthorName}" Width="*"/>
+                <DataGridTextColumn Header="Исполнитель" Binding="{Binding ExecutorName}" Width="*"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding RequestTypeName}" Width="*"/>
+                <!--<DataGridTemplateColumn Width="100" Header="Действие">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Подробнее" Click="DetailsButton_Click" Tag="{Binding}" 
+                        Background="#588157" Foreground="White" BorderThickness="0" 
+                        Margin="2" Padding="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Взять в работу" HorizontalAlignment="Left" VerticalAlignment="Bottom"

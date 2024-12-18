@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CITOGAU.Classes.Department
 {
-    public class DepartmentType
+    public class DepartmentTypes
     {
         [Key]
         public int ID_DepartmentType { get; set; }

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CITOGAU.Classes.Department
 {
-    public class DepartmentGroup
+    public class ListItem
     {
-        public string DepartmentTypeName { get; set; }
-        public List<Department> Departments { get; set; }
+        public string Title { get; set; }
+        public string Value { get; set; }
+        public string Group { get; set; }
     }
 }

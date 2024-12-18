@@ -35,15 +35,19 @@ namespace CITOGAU.ApiContext.Services
             var response = await _httpClient.GetAsync("/Department/allDepartment");
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
+            //Console.WriteLine("Received Content: " + content);
             return JsonConvert.DeserializeObject<List<Department>>(content);
         }
 
-        public async Task<List<DepartmentType>> GetAllDepartmentTypeAsync()
+        public async Task<List<DepartmentTypes>> GetAllDepartmentTypeAsync()
         {
             var response = await _httpClient.GetAsync("/Department/allDepartmentType");
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<List<DepartmentType>>(content);
+            //Console.WriteLine("Received Content: " + content);
+            return JsonConvert.DeserializeObject<List<DepartmentTypes>>(content);
         }
+
+
     }
 }

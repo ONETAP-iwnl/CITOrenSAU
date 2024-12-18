@@ -12,5 +12,9 @@ namespace CITOGAU.Interface.Tickets
         Task<List<Ticket>> GetAllTicketsAsync();
         Task<Ticket> CreateTicketAsync(Ticket newTicket);
         Task UpdateTicketAsync(Ticket ticket);
+        Task<bool> UpdateTicketStatusAsync(int id, int statusId);
+        Task<bool> AssignExecutorToTicketAsync(int id, int executorId);
+
+        Task<bool> UpdateTicketCompletionDateAsync(int ticketId, DateTime? completionDate);
     }
 }

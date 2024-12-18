@@ -55,5 +55,26 @@ namespace CITOGAU.ApiContext.Service
             var response = await _httpClient.PutAsync("/Ticket/update", content);
             response.EnsureSuccessStatusCode();
         }
+
+        public async Task<bool> UpdateTicketStatusAsync(int id, int statusId)
+        {
+            var response = await _httpClient.PutAsync($"/Ticket/{id}/status/{statusId}", null);
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> AssignExecutorToTicketAsync(int id, int executorId)
+        {
+            var response = await _httpClient.PutAsync($"/Ticket/{id}/assign/{executorId}", null);
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> UpdateTicketCompletionDateAsync(int ticketId, DateTime? completionDate)
+        {
+            var json = JsonConvert.SerializeObject(completionDate);
+            var content = new StringContent(JsonConvert.SerializeObject(completionDate), Encoding.UTF8, "application/json");
+            Console.WriteLine($"JSON content: {json}");
+            var response = await _httpClient.PutAsync($"/Ticket/dateComplition/{ticketId}", content);
+            return response.IsSuccessStatusCode;
+        }
     }
 }

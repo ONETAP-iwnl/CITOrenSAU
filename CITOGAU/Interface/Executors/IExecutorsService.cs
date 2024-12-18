@@ -9,5 +9,6 @@ namespace CITOGAU.Interface.Executors
     public interface IExecutorsService //ISP
     {
         Task<List<Classes.Executors.Executors>> GetAllExecutorsAsync();
+        Task<int?> GetExecutorsByUserIdAsync(int userId);
     }
 }
