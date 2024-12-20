@@ -1,16 +1,18 @@
-﻿using CITOGAU.Windows.Requests;
+﻿using CITOGAU.ApiContext;
+using CITOGAU.Classes.Facade;
+using CITOGAU.Windows.Requests;
 using System.Windows;
 
 namespace CITOGAU.Windows.WorkWindows
 {
     public partial class EmployeeWindow : Window
     {
-        private RequestListControl requestListControl;
+        private readonly WindowFacade _windowFacade;
 
         public EmployeeWindow()
         {
             InitializeComponent();
-            requestListControl = new RequestListControl();
+            _windowFacade = new WindowFacade(new AuthService("https://26.240.38.124:7086"));
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -20,20 +22,19 @@ namespace CITOGAU.Windows.WorkWindows
 
         private void CreateRequest_Click(object sender, RoutedEventArgs e)
         {
-            CreateRequestWindow createRequestWindow = new CreateRequestWindow(requestListControl);
-            createRequestWindow.Show();
+            var requestListControl = new RequestListControl();
+            _windowFacade.OpenCreateRequestWindow(requestListControl);
         }
 
         private void ViewRequests_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeMainContent.Content = requestListControl;
+            _windowFacade.OpenRequestListControl(EmployeeMainContent);
         }
 
         private void AboutMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            AboutWindow aboutWindow = new AboutWindow();
-            aboutWindow.ShowDialog();
+            _windowFacade.OpenAboutWindow();
         }
-    }
 
+    }
 }

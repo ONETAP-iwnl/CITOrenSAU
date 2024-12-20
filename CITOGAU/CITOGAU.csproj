@@ -118,8 +118,10 @@
     <Compile Include="Classes\Department\DepartmentType.cs" />
     <Compile Include="Classes\Department\ListItem.cs" />
     <Compile Include="Classes\Executors\Executors.cs" />
+    <Compile Include="Classes\Facade\WindowFacade.cs" />
     <Compile Include="Classes\RequestType\RequestTypes.cs" />
     <Compile Include="Interface\Authors\IAuthorsService.cs" />
+    <Compile Include="Interface\Auth\IAuthService.cs" />
     <Compile Include="Interface\Department\IDepartmentService.cs" />
     <Compile Include="Interface\Executors\IExecutorsService.cs" />
     <Compile Include="Interface\RequestType\IRequestTypeService.cs" />

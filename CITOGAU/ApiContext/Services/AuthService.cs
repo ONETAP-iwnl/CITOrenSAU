@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 using CITOGAU.Classes.Users;
+using CITOGAU.Interface.Auth;
 
 
 namespace CITOGAU.ApiContext
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
         private readonly HttpClient _httpClient;
 
